@@ -503,7 +503,7 @@ footer .col-lg-9{
     }
 
     main article:last-child section:last-child{
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
     }
 
     footer{
@@ -526,6 +526,8 @@ footer .col-lg-9{
         padding-top:5vh;
     }
 }
+
+/*Rajout pour rendre la googlemap responsive*/
 
 .map-responsive {
 overflow:hidden;
