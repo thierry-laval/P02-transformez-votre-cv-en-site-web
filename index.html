@@ -12,11 +12,11 @@
     <title>Web Dev_Projet2</title>
     <meta name="description" content="CV de THIERRY LAVAL Projet Formation Web Dev - Découvrez mon parcours, riche et varié passant par l'école militaire des transmissions', la marine marchande, le commerce et la formation.">
     <!-- Oen Graph -->
-    <meta property="og:url" content="https://thierrylaval.github.io">
+    <meta property="og:url" content="https://thierry-laval.github.io/cv/">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Curriculum Vitae">
     <meta property="og:description" content="CV de THIERRY LAVAL Projet Formation Web Dev - Découvrez mon parcours, riche et varié passant par l'école militaire des transmissions, la marine marchande, le commerce et la formation.">
-    <meta property="og:image" content="https://github.com/thierry-laval/blob/master/image/tiri.png?raw=true"> 
+    <meta property="og:image" content="https://github.com/thierry-laval/cv/blob/master/image/tiri.png?raw=true"> 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="./image/tiri.png">
 </head>
@@ -55,7 +55,7 @@
                             <p><a href="mailto:thierrylaval@gmx.com">thierrylaval@gmx.com</a></p>
                         </li>
                         <li><strong>Site web</strong>
-                            <p><a href="https://thierrylaval.github.io/">Thierry Laval sur github</a></p>
+                            <p><a href="https://thierry-laval.github.io/cv/">Thierry Laval sur github</a></p>
                         </li>
                         <li><strong>Skype</strong>
                             <p><a href="https://join.skype.com/invite/pfG9msyGv72N" target="_blank">Appelez-moi</a></p>
@@ -152,27 +152,22 @@
                             </p>
                         </div>
                     </section>
-                </article>
-<!--J'ai rajouté ici le code pour faire une liste déroulante dans un block genre Code arcodéon-->
-                <article> 
+                </article>       
+               <article> 
                     <div class="titles">
                     <i class="fas fa-briefcase"></i>
                     <h3>Expérience professionnelle
                     </h3>
-                    </div>            
-        <body>
-            <div id="replie" style="display: none;">
-                <span 
-                onclick="document.getElementById('deplie').style.display = 'block';document.getElementById('replie').style.display = 'none';"><h6>Cliquez pour continuer l'expérience</h6>
-                </span>
-            </div>
-            <div id="deplie" style="display: block;">
-                <span
-                onclick="document.getElementById('replie').style.display = 'block';document.getElementById('deplie').style.display = 'none';"><h6>Refermer</h6>
-                </span>
+                    </div>
+<!--J'ai rajouté ici le code pour faire une liste déroulante dans un block genre arcodéon-->              
+    <body> 
+        <div> 
+            <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer');" />  
+                <div id="a_masquer" style="display:none">
+                    <br><br>
                     <section>
                         <i class="far fa-circle"></i>
-                        <div>1983 à 1988<br>Montelimar
+                        <div>1983 à 1988<br>France-Montelimar
                         </div>
                         <div>
                             <h2>Armée Française
@@ -186,7 +181,7 @@
                     </section>
                     <section>
                        <i class="far fa-circle"></i>
-                        <div>1989 à 1991<br>Paris
+                        <div>1989 à 1991<br>France-Paris
                         </div>
                         <div>
                             <h2>SAS Security
@@ -200,7 +195,7 @@
                     </section>
                     <section>
                        <i class="far fa-circle"></i>
-                       <div>1992 à 1994<br>Paris
+                       <div>1992 à 1994<br>France-Paris
                         </div>
                         <div>
                             <h2>Les Glénans
@@ -216,7 +211,7 @@
                     </section>
                     <section>
                        <i class="far fa-circle"></i>
-                        <div>1994 à 1998<br>Paris
+                        <div>1994 à 1998<br>France-Paris
                         </div>
                         <div>
                             <h2>Neel cie
@@ -231,7 +226,7 @@
                     </section>
                     <section>
                        <i class="far fa-circle"></i>
-                       <div>2001 à 2003<br>Pondichéry
+                       <div>2001 à 2003<br>Inde-Pondichéry
                         </div>
                         <div>
                             <h2>Lumtadulok SA
@@ -245,7 +240,7 @@
                     </section>
                     <section>
                        <i class="far fa-circle"></i>
-                        <div>2005 à 2010<br>Bangkok
+                        <div>2005 à 2010<br>Thaïlande-Bangkok
                         </div>
                         <div>
                             <h2>cpl-inter.com
@@ -259,7 +254,7 @@
                     </section>
                     <section>
                        <i class="far fa-dot-circle"></i>
-                        <div>2010 à 2020<br>France
+                        <div>2010 à 2020<br>France-Thaïlande
                         </div>
                         <div>
                             <h2>Oley Ola cie
@@ -271,8 +266,21 @@
                             </p>
                         </div>
                      </section>
-            </div>
-        </body> 
+                </div>
+        </div>
+<!--J'ai rajouté ici le code javascript pour la liste déroulante genre arcodéon--> 
+             <script type="text/javascript">
+                function masquer_div(id)
+                {
+                if (document.getElementById(id).style.display == 'none') {
+                document.getElementById(id).style.display = 'block';
+                }
+                else {
+                document.getElementById(id).style.display = 'none';
+                }
+                }</script>
+    </body>         
+<!--Fin du code pour faire une liste déroulante dans un block genre arcodéon--> 
                 </article>        
             </section>
         </main>
@@ -282,9 +290,9 @@
                     <h2 class="bandeau">loisirs
                     </h2>
                         <div>
-                            <i class="fas fa-palette"></i>
-                            <i class="fas fa-music"></i>
-                            <i class="fas fa-leaf"></i>
+                            <i class="fas fa-anchor"></i>
+                            <i class="fas fa-laptop-code"></i>
+                            <i class="fas fa-globe-europe"></i>
                         </div>
                 </div>
             <div class="col-sm-12 col-md-9 col-lg-9">
@@ -310,6 +318,5 @@
         </footer>
     </article>
     </div>
-     
 </body>
 </html>
