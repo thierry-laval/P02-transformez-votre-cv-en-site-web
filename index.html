@@ -318,7 +318,7 @@
             </div>
         </footer>
     </article>
- <!--J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'evite pas la copie du code source-->    
+<!--J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'evite pas la copie du code source-->    
         <script language="Javascript1.2" type="text/javascript">
             function disableselect(e)
             {
@@ -330,6 +330,7 @@
             }
             document.onselectstart=new Function ("return false")
             document.oncontextmenu=new Function ("return false")
+
             if (window.sidebar)
             {
             document.onmousedown=disableselect
