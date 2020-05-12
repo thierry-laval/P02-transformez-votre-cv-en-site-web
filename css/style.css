@@ -558,12 +558,12 @@ iframe {
 
 /*Rajout de l'effet parallax*/
 
-.img1{
+.img1 {
   height: 100px;
   background-attachment: fixed;
   background-size: ;
   background-position: 0 center;
 }
-.img1{
+.img1 {
   background-image: url(https://github.com/thierry-laval/cv/blob/master/image/image-du-parallax.jpeg?raw=true);
 }
