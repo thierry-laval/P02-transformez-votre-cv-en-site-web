@@ -8,12 +8,12 @@ Projet 2: Transformez votre CV en page WEB
 
 * HTML5
 * CSS3 (flexbox)
-* GIT, Git Hub, Visual Studio Code, Bracket 
+* Git Hub, Visual Studio Code, Bracket 
 * Lien CV (https://thierry-laval.github.io/cv) 
 
 ## Auteur
 
 👤 **Thierry LAVAL**
 
-* Github:  [@Thierry LAVAL](https://github.com/thierry-laval)
+* Github:  [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
