@@ -15,5 +15,5 @@ Projet 2: Transformez votre CV en page WEB
 
 👤 **Thierry LAVAL**
 
-*Github:  [@Thierry LAVAL](https://github.com/thierry-laval)
+* Github:  [@Thierry LAVAL](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
