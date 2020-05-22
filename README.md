@@ -2,7 +2,7 @@ Début de formation le 20/04/2020
 
 # OpenClassrooms-Développeur Web
 Projet 2 - Transformez votre CV en page WEB
-Cv complet avec boostrap
+<br>Cv complet avec boostrap
 
 # 🔨 Utilisé dans ce projet
 
