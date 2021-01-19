@@ -63,13 +63,13 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 Copyright © 2020 [Thierry Laval](https://github.com/thierry-laval).
 
-Ce projet est sous licence [MIT](cv/LICENCE).
+Ce projet est sous licence [MIT](LICENCE).
 
 [Voir mon travail]: <InsertUrl>
 
 [Template]: <InsertUrl>
 
-[Git project]: https://github.com/thierry-laval/orinoco
+[Git project]: https://github.com/thierry-laval/cv
 
 ***
 
