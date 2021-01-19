@@ -42,9 +42,9 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 #### 📦  &nbsp; Utilisé dans ce projet
 
-| Languages       | Outils          |
+| Languages       | Outils             |
 | :-------------: |:-------------:     |
-| HTML5           | Bracket            |
+| HTML5           | Bootstrap          |
 | CSS3 (flexbox)  | Visual Studio Code |
 | Git/GitHub      | Photoshop          |
 
