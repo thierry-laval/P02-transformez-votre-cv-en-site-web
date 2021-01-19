@@ -4,10 +4,11 @@ _`Début de formation le 20/04/2020`_
 
 ### Auteur
 
-👤 **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
+👤 &nbsp; **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
 
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
+* Visitez ==> 🏠 [Site Web](https://xXx)
 
 ***
 
@@ -19,7 +20,14 @@ _`Début de formation le 20/04/2020`_
 
 Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur la création d'un site accessible en toutes circonstances depuis n’importe quel appareil avec un affichage responsive, qui s’adapte à la fois aux ordinateurs et aux mobiles. Pour ne pas le rendre trop générique et faire en sorte qu’il soit representatif, lui ajouter un peu de personnalité en utilisant des couleurs ​Material Design​ et des icônes F​ont Awesome​.
 
-***
+* 👀  &nbsp; Voir : [Le projet sur OpenClassrooms](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_P2/08:20%20-%20Transformez%20votre%20CV%20en%20site%20Web%20-%20OpenClassrooms.pdf "Cliquez pour voir le projet")
+
+### Contexte du projet
+
+* Votre CV n'est pas tout à fait à jour. Avant de rencontrer un client potentiel, vous décidez de créer votre propre site web, sur lequel vous publierez votre CV.
+* Vous choisissez de développer votre site en HTML et CSS.
+* Pour éviter de payer un serveur, vous décidez d’héberger votre site sur GitHub Pages. Vous créez donc immédiatement un compte pour tester ce service.
+* Satisfait de la simplicité du processus, vous faites encore quelques recherches sur les critères d’un bon CV en ligne, et choisissez finalement de créer un modèle.
 
 #### Objectifs et Compétences évalué
 
@@ -32,15 +40,7 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 ***
 
-#### 🔨 Utilisé dans ce projet
-
-* Voir : [Le projet sur OpenClassrooms](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_P2/08:20%20-%20Transformez%20votre%20CV%20en%20site%20Web%20-%20OpenClassrooms.pdf "Cliquez pour voir le projet")
-
-* Les cours en ligne d'OpenClassrooms
-  * [Apprenez à créer votre site web avec HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
-  * [Découpez et intégrez une maquette](https://openclassrooms.com/fr/courses/3504431-decoupez-et-integrez-une-maquette)
-  * [Adoptez Visual Studio comme environnement de développement](https://openclassrooms.com/fr/courses/5641796-adoptez-visual-studio-comme-environnement-de-developpement)
-  * [Utilisez Git et GitHub pour vos projets de développement](https://openclassrooms.com/fr/courses/5641721-utilisez-git-et-github-pour-vos-projets-de-developpement)
+#### 📦  &nbsp; Utilisé dans ce projet
 
 | Languages       | Outils          |
 | :-------------: |:-------------:     |
@@ -48,9 +48,15 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 | CSS3 (flexbox)  | Visual Studio Code |
 | Git/GitHub      | Photoshop          |
 
+* Les cours en ligne d'OpenClassrooms
+  * [Apprenez à créer votre site web avec HTML5 et CSS3](https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3)
+  * [Découpez et intégrez une maquette](https://openclassrooms.com/fr/courses/3504431-decoupez-et-integrez-une-maquette)
+  * [Adoptez Visual Studio comme environnement de développement](https://openclassrooms.com/fr/courses/5641796-adoptez-visual-studio-comme-environnement-de-developpement)
+  * [Utilisez Git et GitHub pour vos projets de développement](https://openclassrooms.com/fr/courses/5641721-utilisez-git-et-github-pour-vos-projets-de-developpement)
+
 ***
 
-### 🚦Les documents de présentation
+### 🚦 &nbsp; Les documents de présentation et livrables
 
 → [Voir le dépot sur Github](https://github.com/thierry-laval/cv)\
 → [Voir le cv en ligne](https://thierry-laval.github.io/cv/)\

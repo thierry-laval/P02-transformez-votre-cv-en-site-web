@@ -1,3 +1,5 @@
+/* Formation OpenClassrooms - Projet 2 - Développeur Web - Thierry Laval */
+
 /* A la question de pourquoi avoir utiliser des unités de mesures en vw, em... J'ai pris reference sur le css3 et voulu tester l'ensemble. Je suis conscient qu'en tant normal je peux ecrire le code plus simplement. Ref:https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php*/
 
 /* Je me suis servi du module des boîtes flexibles, aussi appelé « flexbox », a été conçu comme un modèle de disposition unidimensionnel et comme une méthode permettant de distribuer l'espace entre des objets d'une interface ainsi que de les aligner. Ref:https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox*/
@@ -559,11 +561,12 @@ iframe {
 /*Rajout de l'effet parallax*/
 
 .img1 {
-  height: 100px;
-  background-attachment: fixed;
-  background-size: ;
-  background-position: 0 center;
+    height: 100px;
+    background-attachment: fixed;
+    background-size: ;
+    background-position: 0 center;
 }
+
 .img1 {
-  background-image: url(https://github.com/thierry-laval/cv/blob/master/image/image-du-parallax.jpeg?raw=true);
+    background-image: url(https://github.com/thierry-laval/cv/blob/master/image/image-du-parallax.jpeg?raw=true);
 }
