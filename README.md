@@ -54,8 +54,8 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 → [Voir le dépot sur Github](https://github.com/thierry-laval/cv)\
 → [Voir le cv en ligne](https://thierry-laval.github.io/cv/)\
-→ [Voir la maquette](cv/documents/P2_maquette.png)
-→ [Voir le code](cv/documents/P2_presentation_code_source.png)
+→ [Voir la maquette](documents/P2_maquette.png)\
+→ [Voir le code](documents/P2_presentation_code_source.png)
 
 ***
 
