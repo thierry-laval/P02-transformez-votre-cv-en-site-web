@@ -20,7 +20,7 @@ _`Début de formation le 20/04/2020`_
 
 Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur la création d'un site accessible en toutes circonstances depuis n’importe quel appareil avec un affichage responsive, qui s’adapte à la fois aux ordinateurs et aux mobiles. Pour ne pas le rendre trop générique et faire en sorte qu’il soit representatif, lui ajouter un peu de personnalité en utilisant des couleurs ​Material Design​ et des icônes F​ont Awesome​.
 
-* 👀  &nbsp; Voir : [Le projet sur OpenClassrooms](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_P2/08:20%20-%20Transformez%20votre%20CV%20en%20site%20Web%20-%20OpenClassrooms.pdf "Cliquez pour voir le projet")
+* 👀  &nbsp; Voir : [Le projet sur OpenClassrooms](documents/projet_sur_OpenClassrooms.pdf "Cliquez pour voir le projet")
 
 ### Contexte du projet
 
