@@ -2,7 +2,7 @@
 
 _`Début de formation le 20/04/2020`_
 
-### Auteur
+## Auteur
 
 👤 &nbsp; **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
 
