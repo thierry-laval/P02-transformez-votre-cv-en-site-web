@@ -65,8 +65,8 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 #### 🚦 &nbsp; Les documents de présentation et livrables
 
-→ [Voir le dépot sur Github](https://github.com/thierry-laval/cv)\
-→ [Voir le cv en ligne](https://thierry-laval.github.io/cv/)\
+→ [Voir le dépot sur Github](https://github.com/thierry-laval/P2-Transformez-votre-CV-en-site-Web)\
+→ [Voir le cv en ligne](https://thierry-laval.github.io/P2-Transformez-votre-CV-en-site-Web/)\
 → [Voir la maquette](documents/P2_maquette.png)\
 → [Voir le code](documents/P2_presentation_code_source.png)
 
