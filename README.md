@@ -22,10 +22,10 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 ### 👀  &nbsp; Voir Le projet d'OpenClassrooms
 
-* [Mission](00_Projet_2_OCR/1_mission.pdf "Cliquez pour voir le projet")
-* [Cours](00_Projet_2_OCR/2_cours.pdf "Cliquez pour voir le projet")
-* [Ressources](00_Projet_2_OCR/3_ressources.pdf "Cliquez pour voir le projet")
-* [Évaluation](00_Projet_2_OCR/4_evaluation.pdf "Cliquez pour voir le projet")
+* [La mission](00_Projet_2_OCR/1_mission.pdf "Cliquez pour voir la mission du projet")
+* [Les cours](00_Projet_2_OCR/2_cours.pdf "Cliquez pour voir les cours")
+* [Les ressources](00_Projet_2_OCR/3_ressources.pdf "Cliquez pour voir le projet")
+* [l'évaluation de la soutenance](00_Projet_2_OCR/4_evaluation.pdf "Cliquez pour voir l'évaluation")
 
   #### 🔖  &nbsp; Contexte du projet
 
@@ -52,6 +52,8 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 | HTML5           | Bootstrap          |
 | CSS3 (flexbox)  | Visual Studio Code |
 | Git/GitHub      | Photoshop          |
+
+ &nbsp;  &nbsp;  &nbsp;  &nbsp; ![left 100%](documents/icon_p2.png?raw=true)
 
 * Les cours en ligne d'OpenClassrooms
   * [Adoptez Visual Studio comme environnement de développement](https://openclassrooms.com/fr/courses/5641796-adoptez-visual-studio-comme-environnement-de-developpement)

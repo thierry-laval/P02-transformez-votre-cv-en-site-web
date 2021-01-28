@@ -36,7 +36,18 @@ body {
 
 img {
     border-radius: 50%;
-    border: 10px #000000 double;
+    border: 2px #000000 solid;
+}
+{
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 4px solid #FFFFFF;
+    width: 216px;
+    /*dimensions exactes de l'image = maquette*/
+    height: 216px;
+    /*dimensions exactes de l'image = maquette*/
 }
 
 header div:first-child {
