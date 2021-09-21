@@ -8,17 +8,19 @@ _`Début de formation le 20/04/2020`_
 
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
-* Visitez ==> 🏠 [Site Web](https://xXx)
+* Visitez ==> 🏠 [Site Web](https://thierrylaval.dev)
 
 ***
 
-### 📎 Projet 2 - Transformez votre CV en page WEB (Cv complet avec boostrap)
+### 📎 Projet 02 - Transformez votre CV en page WEB (Cv complet avec boostrap)
 
 ![left 100%](documents/logo_p2.png?raw=true)
 
+_`Début du projet le 13/05/2020`_
+
 ***
 
-Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur la création d'un site accessible en toutes circonstances depuis n’importe quel appareil avec un affichage responsive, qui s’adapte à la fois aux ordinateurs et aux mobiles. Pour ne pas le rendre trop générique et faire en sorte qu’il soit representatif, lui ajouter un peu de personnalité en utilisant des couleurs ​Material Design​ et des icônes F​ont Awesome​.
+Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur la création d'un site accessible en toutes circonstances depuis n’importe quel appareil avec un affichage responsive, qui s’adapte à la fois aux ordinateurs et aux mobiles. Pour ne pas le rendre trop générique et faire en sorte qu’il soit représentatif, lui ajouter un peu de personnalité en utilisant des couleurs ​Material Design​ et des icônes F​ont Awesome​.
 
 ### 👀  &nbsp; Voir Le projet d'OpenClassrooms
 
@@ -27,12 +29,12 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 * [Les ressources](00_Projet_2_OCR/3_ressources.pdf "Cliquez pour voir le projet")
 * [l'évaluation de la soutenance](00_Projet_2_OCR/4_evaluation.pdf "Cliquez pour voir l'évaluation")
 
-  #### 🔖  &nbsp; Contexte du projet
+#### 🔖  &nbsp; Contexte du projet
 
-  * Votre CV n'est pas tout à fait à jour. Avant de rencontrer un client potentiel, vous décidez de créer votre propre site web, sur lequel vous publierez votre CV.
-  * Vous choisissez de développer votre site en HTML et CSS.
-  * Pour éviter de payer un serveur, vous décidez d’héberger votre site sur GitHub Pages. Vous créez donc immédiatement un compte pour tester ce service.
-  * Satisfait de la simplicité du processus, vous faites encore quelques recherches sur les critères d’un bon CV en ligne, et choisissez finalement de créer un modèle.
+* Votre CV n'est pas tout à fait à jour. Avant de rencontrer un client potentiel, vous décidez de créer votre propre site web, sur lequel vous publierez votre CV.
+* Vous choisissez de développer votre site en HTML et CSS.
+* Pour éviter de payer un serveur, vous décidez d’héberger votre site sur GitHub Pages. Vous créez donc immédiatement un compte pour tester ce service.
+* Satisfait de la simplicité du processus, vous faites encore quelques recherches sur les critères d’un bon CV en ligne, et choisissez finalement de créer un modèle.
 
 #### 📈  &nbsp; Objectifs et Compétences évalué
 
@@ -67,8 +69,8 @@ Le sujet du projet 2 du parcours Développeur web chez Openclassrooms porte sur 
 
 #### 🚦 &nbsp; Les documents de présentation et livrables
 
-→ Voir le dépot sur [Github](https://github.com/thierry-laval/P2-transformez-votre-cv-en-site-web)\
-→ Voir le [cv en ligne](https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web)\
+→ Voir le dépot sur [Github](https://github.com/thierry-laval/P02-transformez-votre-cv-en-site-web)\
+→ Voir le [cv en ligne](https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/)\
 → Voir la [maquette](documents/P2_maquette.png)\
 → Voir le [code](documents/P2_presentation_code_source.png)
 
@@ -84,10 +86,10 @@ Ce projet est sous licence [MIT](LICENCE).
 
 [Template]: <InsertUrl>
 
-[Git project]: https://github.com/thierry-laval/cv
+[Git project]: https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/
 
 ***
 
 Donnez une ⭐️ &nbsp; si ce projet vous a plu !
 
-<p>&hearts; Love Markdown<p>
+&hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
