@@ -4,7 +4,7 @@ _`Début de formation le 20/04/2020`_
 
 ## Auteur
 
-👤 &nbsp; **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<thierrylaval@gmx.com>)
+👤 &nbsp; **Thierry LAVAL** [🇫🇷 Contactez moi 🇬🇧](<contact@thierrylaval.dev>)
 
 * Github: [@Thierry Laval](https://github.com/thierry-laval)
 * LinkedIn: [@Thierry Laval](https://www.linkedin.com/in/thierry-laval)
@@ -36,7 +36,7 @@ Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur
 * Pour éviter de payer un serveur, vous décidez d’héberger votre site sur GitHub Pages. Vous créez donc immédiatement un compte pour tester ce service.
 * Satisfait de la simplicité du processus, vous faites encore quelques recherches sur les critères d’un bon CV en ligne, et choisissez finalement de créer un modèle.
 
-#### 📈  &nbsp; Objectifs et Compétences évalué
+#### 📈  &nbsp; Objectifs et Compétences évalués
 
 * Intégrer du contenu conformément à une maquette
 * Préparer des éléments graphiques et textuels à intégrer à une page web
@@ -49,7 +49,7 @@ Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur
 
 #### 📦  &nbsp; Utilisé dans ce projet
 
-| Languages       | Outils             |
+| Langages        | et Applications    |
 | :-------------: |:-------------:     |
 | HTML5           | Bootstrap          |
 | CSS3 (flexbox)  | Visual Studio Code |
@@ -69,27 +69,33 @@ Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur
 
 #### 🚦 &nbsp; Les documents de présentation et livrables
 
-→ Voir le dépot sur [Github](https://github.com/thierry-laval/P02-transformez-votre-cv-en-site-web)\
+→ Voir le dépôt sur [Github](https://github.com/thierry-laval/P02-transformez-votre-cv-en-site-web)\
 → Voir le [cv en ligne](https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/)\
 → Voir la [maquette](documents/P2_maquette.png)\
 → Voir le [code](documents/P2_presentation_code_source.png)
 
 ***
 
-##### 📝 &nbsp; License
+#### 📝 &nbsp; License
 
-Copyright © 2020 [Thierry Laval](https://github.com/thierry-laval).
+Copyright © 2020 [Thierry Laval](https://thierrylaval.dev)
 
 Ce projet est sous licence [MIT](LICENCE).
 
-[Voir mon travail]: <InsertUrl>
+[Voir mon travail](https://github.com/thierry-laval)
 
-[Template]: <InsertUrl>
-
-[Git project]: https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/
+[Créer un bon template](https://github.com/thierry-laval/P22-template-pour-un-readme)
 
 ***
 
+### &hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
+
 Donnez une ⭐️ &nbsp; si ce projet vous a plu !
 
-&hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
+<span style="font-family:Papyrus; font-size:4em;">FAN DE GITHUB !</span>
+
+<!--[This is an image](https://myoctocat.com/assets/images/base-octocat.svg)-->
+
+<a href="url"><img src="https://myoctocat.com/assets/images/base-octocat.svg" height="300"></a>
+
+**[⬆ Retour en haut](#auteur)** <br>
