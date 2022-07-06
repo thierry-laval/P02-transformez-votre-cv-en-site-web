@@ -90,11 +90,11 @@ Ce projet est sous licence [MIT](LICENCE).
 
 ### &hearts;&nbsp;&nbsp;&nbsp;&nbsp;Love Markdown
 
-Donnez une ⭐️ &nbsp; si ce projet vous a plu !
+Donnez une ⭐️ &nbsp; si ce projet vous a plut !
 
 <span style="font-family:Papyrus; font-size:4em;">FAN DE GITHUB !</span>
 
-<!--[This is an image](https://myoctocat.com/assets/images/base-octocat.svg)-->
+<!-- [This is an image](https://myoctocat.com/assets/images/base-octocat.svg) -->
 
 <a href="url"><img src="https://myoctocat.com/assets/images/base-octocat.svg" height="300"></a>
 

@@ -1,29 +1,104 @@
+<!DOCTYPE html>
 <!-- Formation OpenClassrooms - Projet 2 - Développeur Web - Thierry Laval -->
 
-<!DOCTYPE html>
+<!-- Modification de la balise lang en fr -->
 <html lang="fr">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link href="./bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width">
-    <!-- FontAwesome -->
-    <link href="font_awesome/css/all.css" rel="stylesheet">
-    <!-- Title & description -->
-    <title>Développeur Web</title>
+
+    <!-- Méta viewport bien calibrée -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- old <meta name="viewport" content="width=device-width"> -->
+
+    <!-- Balise méta-titre qui apparaît dans les résultats des moteurs de recherche -->
+    <title>Thierry Laval cv d'un développeur web</title>
+
+    <!-- Balise meta description -->
     <meta name="description"
-        content="CV de THIERRY LAVAL Projet Formation Web Dev - Découvrez mon parcours, riche et varié passant par l'école militaire des transmissions', la marine marchande, le commerce et la formation.">
-    <!-- Open Graph -->
+        content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
+
+    <!-- Balise méta-name de description du site -->
+    <meta name="Subject" content="CV Développeur web">
+
+    <!-- Balise d'identification du site. -->
+    <meta name="Identifier-Url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/">
+
+    <!-- Balise de contact -->
+    <meta name="Reply-To" content="contact@thierrylaval.dev">
+
+    <!-- Balise attribut hreflang -->
+    <link rel="alternate" hreflang="fr-fr"
+        href="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/" />
+    <link rel="alternate" hreflang="x-default"
+        href="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/" />
+
+    <!-- Balises meta author et Publisher afin d'identifier le développeur du site -->
+    <meta name="author" content="Thierry Laval">
+    <meta name="Publisher" content="Thierry Laval">
+
+    <!-- Balise meta robots afin de pouvoir l'optimiser par la suite -->
+    <meta name="robots" content="all" />
+
+    <!-- Balise meta mots clés -->
+    <meta name="keywords" content="Développeur web, Prestashop, WordPress, WooCommerce, e-commerce,Webmaster">
+
+    <!-- SEO - Balise canonical pour consolider les signaux de liens provenant de différentes pages sur une seule URL avec indication de la page principale à indexer -->
+    <link rel=”canonical” href=”https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/index.html” />
+
+    <!-- Balises diverses d'informations pour les  moteurs de recherches -->
+    <meta name="Revisit-After" content="7 days">
+    <meta name="Robots" content="all">
+    <meta name="Rating" content="general">
+    <meta name="Distribution" content="global">
+    <meta name="Geography" content="Nouvelle Aquitaine">
+    <meta name="Category" content="internet">
+
+    <!-- Balise méta HTML utilisée par Google Chrome sous Android pour modifier la couleur de la barre d’adresse dans le navigateur mobile -->
+    <meta name="theme-color" content="#17bbe8">
+
+    <!-- Balises meta pour les réseaux sociaux Open Graph -->
     <meta property="og:url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Curriculum Vitae">
+    <meta property="og:type" content="Site web">
+    <meta property="og:title" content="Curriculum Vitae de Thierry Laval">
     <meta property="og:description"
-        content="CV de THIERRY LAVAL Projet Formation Web Dev - Découvrez mon parcours, riche et varié passant par l'école militaire des transmissions, la marine marchande, le commerce et la formation.">
+        content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
     <meta property="og:image" content="image/tiri.png?raw=true">
+    <meta property="og:url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web" />
+    <meta property="og:site_name" content="Curriculum Vitae" />
+    <meta property="article:published_time" content="2020-07-16T05:59:00+01:00">
+    <meta property="article:modified_time" content="2020-07-16T19:08:47+01:00">
+    <meta property="article:section" content="Curriculum Vitae de Thierry Laval">
+    <meta property="article:tag" content="Article Tag a mettre ici">
+    <meta property="fb:admins" content="Facebook numberic ID a mettre ici">
+    <meta property="article:author" content="Thierry Laval">
+
+    <!-- Ajout des balises meta données pour twitter -->
+    <meta name="twitter:card" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web" />
+    <meta name="twitter:site" content="@thierry_laval" />
+    <meta name="twitter:title" content="Curriculum Vitae de Thierry Laval" />
+    <meta name="twitter:description"
+        content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web" />
+    <meta name="twitter:creator" content="Thierry Laval">
+    <meta name="twitter:image" content="./image/tiri.png">
+
+    <!-- Ajout d'une icône tactile Apple -->
+    <link rel="apple-touch-icon" href="./image/tiri.png">
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="./image/tiri.png">
+
+    <!-- FontAwesome -->
+    <link href="font_awesome/css/all.css" rel="stylesheet">
+
+    <!-- Liens vers les feuilles de style css Minifiées -->
+    <link rel="stylesheet" type="text/css" href="./css/style-min.css">
+
+    <!-- Liens vers les feuilles de style -->
+    <link href="./bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
 </head>
 
 <body>
@@ -35,7 +110,7 @@
             </div>
             <div class="col-sm-12 col-md-9 col-lg-9">
                 <h1><span>thierry</span>laval</h1>
-                <!-- J'ai réduit le soulignement du titre dans le css avec un <span> sur le h3 et j'ai mis un <mark> pour surligner freelance -->
+                <!--  J'ai réduit le soulignement du titre dans le css avec un <span> sur le h3 et j'ai mis un <mark> pour surligner freelance  -->
                 <h3><span>Développeur web</span><mark> freelance</mark></h3>
             </div>
         </header>
@@ -47,13 +122,13 @@
                         <li><strong>Adresse</strong>
                             <p>Saint Sornin
                                 <br>Charente maritime</p>
-                            <!-- J'ai installé ici la carte de Google dans un iframe et dans un div avec une classe pour régler le problème du responsive avec ajout dans le css -->
+                            <!--  J'ai installé ici la carte de Google dans un iframe et dans un div avec une classe pour régler le problème du responsive avec ajout dans le css  -->
                             <div class="map-responsive">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193173.6353829302!2d-1.0653634472974334!3d45.834382761475474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48016da2befad6b9%3A0x73a9c5f5b744182!2s1%20Pl.%20Saint-Saturnin%2C%2017600%20Saint-Sornin!5e0!3m2!1sfr!2sfr!4v1632214431448!5m2!1sfr!2sfr"
                                     style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             </div>
-                            <!-- Fin du rajout de la carte de Google -->
+                            <!--  Fin du rajout de la carte de Google  -->
                         </li>
                         <li><strong>Téléphone</strong>
                             <p><a href="tel:+33640663199">06 40 66 31 99‬</a></p>
@@ -83,7 +158,7 @@
                         travailler dans de nombreux pays. Cela m'a permis de comprendre différentes cultures </p>
                     <p>J'ai appris à m'adapter à chaque demande pour proposer une offre entièrement personnalisée.</p>
                 </section>
-                <!-- J'ai installé ici un petit effet parallax -->
+                <!--  J'ai installé ici un petit effet parallax  -->
                 <div class="img1"></div>
             </aside>
             <div class="col-sm-12 col-md-9 col-lg-9">
@@ -166,7 +241,7 @@
                     <div class="titles"> <i class="fas fa-briefcase"></i>
                         <h3>Expérience professionnelle</h3>
                     </div>
-                    <!-- J'ai rajouté ici le code pour ouvrir ou fermer un block de texte -->
+                    <!--  J'ai rajouté ici le code pour ouvrir ou fermer un block de texte  -->
                     <div>
                         <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer');" />
                         <div id="a_masquer" style="display:none">
@@ -294,7 +369,7 @@
                             </section>
                         </div>
                     </div>
-                    <!-- Fin du rajout du code pour ouvrir ou fermer un block de texte -->
+                    <!--  Fin du rajout du code pour ouvrir ou fermer un block de texte  -->
                 </article>
             </div>
         </main>
@@ -328,7 +403,7 @@
             </footer>
         </article>
     </div>
-    <!-- J'ai rajouté ici le code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle -->
+    <!--  J'ai rajouté ici le code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle  -->
     <script>
         function masquer_div(id) {
             if (document.getElementById(id).style.display == 'none') {
@@ -338,9 +413,9 @@
             }
         }
     </script>
-    <!-- Fin du rajout du code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle -->
+    <!--  Fin du rajout du code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle  -->
 
-    <!-- J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'évite pas la copie du code source -->
+    <!--  J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'évite pas la copie du code source  -->
     <script>
         function disableselect(e) {
             return false
@@ -356,7 +431,7 @@
             document.onclick = reEnable
         }
     </script>
-    <!-- Fin du code javascript pour bloquer le clic droit et éviter la copie -->
+    <!--  Fin du code javascript pour bloquer le clic droit et éviter la copie  -->
 
 </body>
 
