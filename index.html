@@ -167,6 +167,7 @@
                 <div class="img1"></div>
             </aside>
             <div class="col-sm-12 col-md-9 col-lg-9">
+                <!--  J'ai rajouté ici le code pour le block de texte Formations -->
                 <article>
                     <div class="titles"> <i class="fas fa-graduation-cap fa-2x"></i>
                         <h3>formation</h3>
@@ -242,11 +243,48 @@
                         </div>
                     </section>
                 </article>
+                <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Diplômes -->
+                <article>
+                    <div class="titles"> <i class="fas fa-briefcase"></i>
+                        <h3>Diplômes</h3>
+                    </div>
+                    <div>
+                        <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer1');" />
+                        <div id="a_masquer1" style="display:none">
+                            <br>
+                            <br>
+                            <section> <i class="far fa-circle"></i>
+                                <div>Informatique</div>
+                                <div>
+                                    <h2>Développement web</h2>
+                                    <p> BAC+2 (BTS) Développeur Web.<br>
+                                        BMP1 Crypto régulation en transmissions informatiques (école militaire).<br>
+                                        T.E.S.O.L. Teacher of English to Speakers of Other Languages.<br>
+                                        Alternance certifiée d'Infographiste Maquettiste exécutant PAO (1600h).<br>
+                                        Certificats de formation sur les CMS Prestashop & WordPress.<br>
+                                        Certificat de formation HTML5/CSS3.<br>
+                                        Certificats (130) sur les technologie du web.</p>
+                                </div>
+                            </section>
+                            <section> <i class="far fa-circle"></i>
+                                <div>Maritime</div>
+                                <div>
+                                    <h2>Voile hauturière</h2>
+                                    <p> C.I.N. Certificat d'initiation nautique.<br>
+                                        P.C.M. Motoriste maritime.<br>
+                                        C.T.E. Certificat restreint de radiotéléphonie.<br>
+                                        B.N.S. Brevet national de secourisme.<br>
+                                        Diplôme de Moniteur fédéral croisière hauturière.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div><br>
+                </article>
+                <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Expérience professionnelle -->
                 <article>
                     <div class="titles"> <i class="fas fa-briefcase"></i>
                         <h3>Expérience professionnelle</h3>
                     </div>
-                    <!--  J'ai rajouté ici le code pour ouvrir ou fermer un block de texte  -->
                     <div>
                         <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer');" />
                         <div id="a_masquer" style="display:none">
@@ -287,7 +325,6 @@
                                         dans toutes les bases nautiques de l'association. </p>
                                 </div>
                             </section>
-
                             <section> <i class="far fa-circle"></i>
                                 <div>1995 - 1996
                                     <br>France-Paris </div>
@@ -298,7 +335,6 @@
                                         Réalisation de photomontage et travaux d'impression.</p>
                                 </div>
                             </section>
-
                             <section> <i class="far fa-circle"></i>
                                 <div>1997 - 1999
                                     <br>France-Caraïbes </div>
@@ -361,7 +397,7 @@
                                 </div>
                             </section>
                             <section> <i class="far fa-dot-circle"></i>
-                                <div>2021
+                                <div>2020 - Maintenant
                                     <br>France </div>
                                 <div>
                                     <h2>Freelance</h2>
@@ -374,7 +410,6 @@
                             </section>
                         </div>
                     </div>
-                    <!--  Fin du rajout du code pour ouvrir ou fermer un block de texte  -->
                 </article>
             </div>
         </main>
@@ -408,7 +443,7 @@
             </footer>
         </article>
     </div>
-    <!--  J'ai rajouté ici le code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle  -->
+    <!--  J'ai rajouté ici le code javascript pour ouvrir ou fermer les block de texte  -->
     <script>
         function masquer_div(id) {
             if (document.getElementById(id).style.display == 'none') {
@@ -418,7 +453,7 @@
             }
         }
     </script>
-    <!--  Fin du rajout du code javascript pour ouvrir ou fermer le block de texte Expérience professionnelle  -->
+    <!--  Fin du rajout du code javascript pour ouvrir ou fermer le block de texte  -->
 
     <!--  J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'évite pas la copie du code source  -->
     <script>
