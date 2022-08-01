@@ -97,7 +97,5 @@ Donnez une ⭐️ &nbsp; si ce projet vous a plut !
 <!-- [This is an image](https://myoctocat.com/assets/images/base-octocat.svg) -->
 
 <a href="url"><img src="https://myoctocat.com/assets/images/base-octocat.svg" height="300"></a>
-<div class="github-card" data-github="thierry-laval" data-width="400" data-height="" data-theme="medium"></div>
-<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
 **[⬆ Retour en haut](#auteur)** <br>
