@@ -1,478 +1,504 @@
 <!DOCTYPE html>
 <!-- Formation OpenClassrooms - Projet 2 - Développeur Web - Thierry Laval -->
-
 <!-- Modification de la balise lang en fr -->
 <html lang="fr">
 
-<head>
+    <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+        <!-- Required meta tags - Ici, toutes les balises meta “classiques” et additionnelles sont volontairement incluses et parfois exagérées, dans le cadre d’un cours de formation pour débutants. L’objectif est de montrer l’ensemble des possibilités de meta tags Open Graph et Twitter card, de met de comprendre leur rôle dans le SEO, l’accessibilité, et l’affichage sur différents navigateurs et réseaux sociaux. -->
 
-    <!-- Méta viewport bien calibrée -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <!-- old <meta name="viewport" content="width=device-width"> -->
+        <!-- Définition de l'encodage des caractères pour le site (UTF-8 supporte tous les caractères) -->
+        <meta charset="utf-8">
+        <!-- Compatibilité avec Internet Explorer pour utiliser le mode le plus récent disponible -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Définition de la langue principale du contenu -->
+        <meta http-equiv="Content-Language" content="fr">
+        <!-- Contrôle du cache pour forcer le navigateur à ne pas utiliser d'anciennes versions -->
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Expires" content="0">
 
-    <!-- Balise méta-titre qui apparaît dans les résultats des moteurs de recherche -->
-    <title>Thierry Laval cv d'un développeur web</title>
+        <!-- Méta viewport bien calibrée -->
+        <!-- Configuration de la viewport pour un affichage responsive sur tous les appareils -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <!-- Ancienne version commentée pour référence historique -->
+        <!-- old <meta name="viewport" content="width=device-width"> -->
 
-     <!-- Primary Meta Tags -->
-    <meta name="title" content="Thierry Laval cv d'un développeur web">
+        <!-- Titre de la page affiché dans les onglets et moteurs de recherche -->
+        <title>Thierry Laval cv d'un développeur web</title>
 
-    <!-- Balise meta description -->
-    <meta name="description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
+        <!-- Balises primaires pour les moteurs de recherche et affichage SEO -->
+        <meta name="title" content="Thierry Laval cv d'un développeur web">
 
-    <!-- Balise méta-name de description du site -->
-    <meta name="Subject" content="CV Développeur web">
+        <!-- Balise meta description courte du site pour les moteurs de recherche -->
+        <meta name="description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
 
-    <!-- Balise d'identification du site. -->
-    <meta name="Identifier-Url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/">
+        <!-- Balise méta-name de description du sujet principal de la page, utile pour l’indexation et métadonnées-->
+        <meta name="Subject" content="CV Développeur web">
 
-    <!-- Balise de contact -->
-    <meta name="Reply-To" content="contact@thierrylaval.dev">
+        <!-- Balise de l'URL d'identification du site. -->
+        <meta name="Identifier-Url" content="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/">
 
-    <!-- Balise attribut hreflang -->
-    <link rel="alternate" hreflang="fr-fr"
-        href="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/" />
-    <link rel="alternate" hreflang="x-default"
-        href="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web/" />
+        <!-- Balise de contact, adresse e-mail du propriétaire du site-->
+        <meta name="Reply-To" content="contact@thierrylaval.dev">
 
-    <!-- Balises meta author et Publisher afin d'identifier le développeur du site -->
-    <meta name="author" content="Thierry Laval">
-    <meta name="Publisher" content="Thierry Laval">
-    <meta name="copyright" content="© thierrylaval.dev" />
+        <!-- Balise attribut hreflang d'indication des langues disponibles pour le site pour le SEO international -->
+        <link rel="alternate" hreflang="fr-fr" href="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/" />
+        <link rel="alternate" hreflang="x-default" href="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/" />
 
-    <!-- Balises meta generator qui permet aux éditeurs du logiciel de faire des statistiques -->
-    <meta name="generator" content="Visual Studio Code (Version : 1.68.1)" />
+        <!-- Balises meta author et Publisher afin d'identifier le développeur du site -->
+        <meta name="author" content="Thierry Laval">
+        <meta name="Publisher" content="Thierry Laval">
+        <meta name="copyright" content="© thierrylaval.dev" />
 
-    <!-- Balise meta robots afin de pouvoir l'optimiser par la suite -->
-    <meta name="robots" content="all" />
+        <!-- Balises Dublin Core pour la normalisation et archivage des métadonnées -->
+        <meta name="DC.title" content="Thierry Laval CV">
+        <meta name="DC.creator" content="Thierry Laval">
+        <meta name="DC.subject" content="Développeur web, Freelance, Prestashop, WordPress">
+        <meta name="DC.description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance">
+        <meta name="DC.publisher" content="Thierry Laval">
+        <meta name="DC.date" content="2020-07-16">
+        <meta name="DC.language" content="fr">
+        <meta name="DC.rights" content="© thierrylaval.dev">
 
-    <!-- Balise meta mots clés -->
-    <meta name="keywords" content="Développeur web, Prestashop, WordPress, WooCommerce, e-commerce,Webmaster">
+        <!-- Balises meta generator d'indication du logiciel utilisé pour créer la page (utile pour statistiques et debugging) -->
+        <meta name="generator" content="Visual Studio Code (Version : 1.68.1)">
 
-    <!-- SEO - Balise canonical pour consolider les signaux de liens provenant de différentes pages sur une seule URL avec indication de la page principale à indexer -->
-    <link rel=”canonical” href=”https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/” />
+        <!-- Balise meta mots clés pour le référencement et indexation par les moteurs de recherche -->
+        <meta name="keywords" content="Développeur web, Prestashop, WordPress, WooCommerce, e-commerce,Webmaster">
 
-    <!-- Balises diverses d'informations pour les  moteurs de recherches -->
-    <meta name="Revisit-After" content="7 days">
-    <meta name="Robots" content="all">
-    <meta name="Rating" content="general">
-    <meta name="Distribution" content="global">
-    <meta name="Geography" content="Nouvelle Aquitaine">
-    <meta name="Category" content="internet">
+        <!-- SEO - Balise canonical pour consolider les signaux de liens provenant de différentes pages sur une seule URL avec indication de la page principale à indexer -->
+        <link rel="canonical" href="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/" />
 
-    <!-- Balise méta HTML utilisée par Google Chrome sous Android pour modifier la couleur de la barre d’adresse dans le navigateur mobile -->
-    <meta name="theme-color" content="#17bbe8">
+        <!-- Liens vers l'auteur et l'éditeur principaux du site -->
+        <link rel="author" href="https://thierrylaval.dev">
+        <link rel="publisher" href="https://thierrylaval.dev">
 
-    <!-- Balises meta pour les réseaux sociaux Open Graph/Facebook -->
-    <meta property="og:url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Curriculum Vitae de Thierry Laval">
-    <meta property="og:description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
-    <meta property="og:image" content="image/tiri.png?raw=true">
-    <meta property="og:url" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web" />
-    <meta property="og:site_name" content="Curriculum Vitae" />
-    <meta property="article:published_time" content="2020-07-16T05:59:00+01:00">
-    <meta property="article:modified_time" content="2020-07-16T19:08:47+01:00">
-    <meta property="article:section" content="Curriculum Vitae de Thierry Laval">
-    <meta property="article:tag" content="Article Tag a mettre ici">
-    <meta property="fb:admins" content="Facebook numeric ID a mettre ici">
-    <meta property="article:author" content="Thierry Laval">
+        <!-- Navigation séquentielle entre pages (utile pour le SEO et l’UX) -->
+        <link rel="prev" href="URL_de_la_page_precedente">
+        <link rel="next" href="URL_de_la_page_suivante">
 
-    <!-- Ajout des balises meta données pour twitter -->
-    <meta name="twitter:card" content="https://thierry-laval.github.io/P2-transformez-votre-cv-en-site-web" />
-    <meta name="twitter:site" content="@thierry_Laval" />
-    <meta name="twitter:title" content="Curriculum Vitae de Thierry Laval" />
-    <meta name="twitter:description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web" />
-    <meta name="twitter:creator" content="Thierry Laval">
-    <meta property="twitter:image" content="image/tiri.png?raw=true">
+        <!-- Balises diverses d'informations pour les  moteurs de recherches -->
+        <meta name="Revisit-After" content="7 days">
+        <meta name="Robots" content="all">
+        <meta name="Rating" content="general">
+        <meta name="Distribution" content="global">
+        <meta name="Geography" content="Nouvelle Aquitaine">
+        <meta name="Category" content="internet">
 
-    <!-- Ajout d'une icône tactile Apple -->
-    <link rel="apple-touch-icon" href="./image/tiri.png">
+        <!-- Balise méta HTML pour modifier la couleur de la barre d’adresse dans les navigateurs modernes -->
+        <meta name="theme-color" content="#17bbe8">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="./image/tiri.png">
+        <!-- Balises meta Open Graph pour le partage sur les réseaux sociaux (Facebook, LinkedIn…)  -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Curriculum Vitae de Thierry Laval">
+        <meta property="og:description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web">
+        <meta property="og:image" content="image/tiri.png?raw=true">
+        <meta property="og:url" content="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web" />
+        <meta property="og:site_name" content="Curriculum Vitae" />
+        <meta property="article:published_time" content="2020-07-16T05:59:00+01:00">
+        <meta property="article:modified_time" content="2020-07-16T19:08:47+01:00">
+        <meta property="article:section" content="Curriculum Vitae de Thierry Laval">
+        <meta property="article:tag" content="Article Tag a mettre ici">
+        <meta property="fb:admins" content="Facebook numeric ID a mettre ici">
+        <meta property="article:author" content="Thierry Laval">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:video" content="URL_de_video">
+        <meta property="og:audio" content="URL_de_audio">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:video:width" content="1280">
+        <meta property="og:video:height" content="720">
+        <meta property="og:audio:secure_url" content="URL_audio_securise">
+        <meta property="og:video:secure_url" content="URL_video_securise">
+        <meta property="og:determiner" content="the">
+        <meta property="og:updated_time" content="2026-01-29T00:00:00+01:00">
+        <meta property="og:see_also" content="https://thierrylaval.dev/autres-pages">
 
-    <!-- FontAwesome -->
-    <link href="font_awesome/css/all.css" rel="stylesheet">
+        <!-- Balises Twitter Card pour le partage sur Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Curriculum Vitae de Thierry Laval" />
+        <meta name="twitter:description" content="Curriculum Vitae de Thierry Laval, Développeur web en freelance, expert e-commerce, Prestashop, WordPress, création de site web" />
+        <meta name="twitter:site" content="@thierry_Laval" />
+        <meta name="twitter:creator" content="@thierry_Laval" />
+        <meta name="twitter:image" content="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/image/tiri.png" />
+        <meta property="twitter:image" content="https://thierry-laval.github.io/P02-transformez-votre-cv-en-site-web/image/tiri.png" />
 
-    <!-- Liens vers les feuilles de style -->
-    <link href="./bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!-- Champs à compléter manuellement si tu as une app ou un player -->
+        <meta name="twitter:domain" content="thierrylaval.dev">
+        <meta name="twitter:player" content="URL_du_player_video_ou_embed_si_existe">
+        <meta name="twitter:player:width" content="LARGEUR_du_player_en_pixels">
+        <meta name="twitter:player:height" content="HAUTEUR_du_player_en_pixels">
+        <meta name="twitter:app:name:iphone" content="Nom_de_l_app_iPhone_si_existe">
+        <meta name="twitter:app:id:iphone" content="ID_de_l_app_iPhone">
+        <meta name="twitter:app:url:iphone" content="URL_de_l_app_iPhone">
+        <meta name="twitter:app:name:ipad" content="Nom_de_l_app_iPad_si_existe">
+        <meta name="twitter:app:id:ipad" content="ID_de_l_app_iPad">
+        <meta name="twitter:app:url:ipad" content="URL_de_l_app_iPad">
+        <meta name="twitter:app:name:googleplay" content="Nom_de_l_app_Android_si_existe">
+        <meta name="twitter:app:id:googleplay" content="ID_de_l_app_Android">
+        <meta name="twitter:app:url:googleplay" content="URL_de_l_app_Android">
 
-    <!-- Liens vers les feuilles de style css Minifiées -->
-    <link rel="stylesheet" type="text/css" href="./css/style-min.css">
+        <!-- Icône tactile pour les appareils Apple (iPhone, iPad, etc.) -->
+        <link rel="apple-touch-icon" href="./image/tiri.png">
 
-</head>
+        <!-- Favicon pour navigateurs classiques -->
+        <link rel="shortcut icon" type="image/png" href="./image/tiri.png">
 
-<body>
-    <div class="container">
-        <header class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3"> <img class="img-fluid" src="./image/tiri.png"
-                    alt="Profile picture"
-                    title="Un sourire sincère dégage une impression de fraîcheur qui est le propre des êtres humains. Si nous voulons voir apparaître de tels sourires, c’est à nous d’en créer les causes.">
-            </div>
-            <div class="col-sm-12 col-md-9 col-lg-9">
-                <h1><span>Thierry</span>Laval</h1>
-                <!--  J'ai réduit le soulignement du titre dans le css avec un <span> sur le h3 et j'ai mis un <mark> pour surligner freelance  -->
-                <h3><span>Développeur web</span><mark> freelance</mark></h3>
-            </div>
-        </header>
-        <main class="row">
-            <aside class="col-sm-12 col-md-3 col-lg-3">
-                <section>
-                    <h2 class="bandeau">contact</h2>
-                    <ul>
-                        <li><strong>Adresse</strong>
-                            <p>Saint Sornin
-                                <br>Charente maritime</p><br>
-                            <!--  J'ai installé ici la carte de Google dans un iframe et dans un div avec une classe pour régler le problème du responsive avec ajout dans le css  -->
-                            <div class="map-responsive">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193173.6353829302!2d-1.0653634472974334!3d45.834382761475474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48016da2befad6b9%3A0x73a9c5f5b744182!2s1%20Pl.%20Saint-Saturnin%2C%2017600%20Saint-Sornin!5e0!3m2!1sfr!2sfr!4v1632214431448!5m2!1sfr!2sfr"
-                                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                            <!--  Fin du rajout de la carte de Google  -->
-                        </li>
-                        <li><strong>Téléphone</strong>
-                            <p><a href="tel:+33640663199">06 40 66 31 99</a></p>
-                        </li>
-                        <li><strong>Email</strong>
-                            <p><a href="mailto:contact@thierrylaval.dev">contact@thierrylaval.dev</a></p>
-                        </li>
-                        <li><strong>Portfolio</strong>
-                            <p><a href="https://thierrylaval.dev" target="_blank">https://thierrylaval.dev</a></p>
-                        </li>
-                        <li><strong>profils professionnels</strong>
-                            <p><a href="https://linkedin.com/in/thierry-laval" target="_blank">Linkedin</a> /
-                                <a href="https://www.malt.fr/profile/thierrylaval" target="_blank">Malt</a></p>
-                        </li>
-                        <li><strong>Projets en cours</strong>
-                            <p><a href="https://github.com/thierry-laval" target="_blank">Mon Github</a></p>
-                        </li>
-                    </ul>
-                </section>
-                <section class="aboutme">
-                    <h2 class="bandeau">À propos de moi</h2>
-                    <p>Un parcours atypique, riche et varié m'a permis de réunir un grand nombre de compétences utiles à
-                        intégrer dans toutes mes activités.</p>
-                    <p>Intègre, honnête, sens de la communication et du respect, je suis pour la gestion des conflits
-                        dans le dialogue et l’équilibre avec une bonne capacité d’adaptation.</p>
-                    <p>Mon goût prononcé pour les voyages et la vie au grand air m'a emmené à visiter, habiter,
-                        travailler dans de nombreux pays. Cela m'a permis de comprendre différentes cultures </p>
-                    <p>J'ai appris à m'adapter à chaque demande pour proposer une offre entièrement personnalisée.</p>
-                </section>
-                <!--  J'ai installé ici un petit effet parallax  -->
-                <div class="img1"></div>
-            </aside>
-            <div class="col-sm-12 col-md-9 col-lg-9">
-                <!--  J'ai rajouté ici le code pour le block de texte Formations -->
-                <article>
-                    <div class="titles"> <i class="fas fa-graduation-cap fa-2x"></i>
-                        <h3>formation</h3>
-                    </div>
-                    <section> <i class="far fa-circle"></i>
-                        <div>1983 - 1988</div>
-                        <div>
-                            <h2>École Militaire des Transmissions</h2>
-                            <h3>Formateur en Cryptorégulation</h3>
-                            <p>Brevet militaire de crypto régulation en transmissions informatiques. Méthodes et
-                                techniques pédagogiques d'enseignement.</p>
-                        </div>
-                    </section>
-                    <section> <i class="far fa-circle"></i>
-                        <div>1989 - 2009</div>
-                        <div>
-                            <h2>Je suis parti visiter le monde (+ de 21 pays)</h2>
-                            <h3>Rencontrer les gens, apprendre les différentes cultures</h3>
-                            <p>J'ai travaillé en mode nomade. Sécurité. Convoyage de voiliers. Gestionnaire
-                                d'hébergements,
-                                boutiques, agence d'infographie et de reprographie, vente et installation de matériel
-                                informatique,
-                                acheteur international/exportateur.</p>
-                        </div>
-                    </section>
-                    <section> <i class="far fa-circle"></i>
-                        <div>2010 - 2017</div>
-                        <div>
-                            <h2>Chef d'entreprise</h2>
-                            <h3>France / Asie du sud-est</h3>
-                            <p>J'ai crée la marque Oley Ola cie. Je participe à la création de produits, mise en place
-                                d'une chaîne complète de fabrication, importation et vente en France. J'ai développer et
-                                gère la boutique en ligne oleyolacie.com en utilisant Prestashop.</p>
-                        </div>
-                    </section>
-                    <section> <i class="far fa-circle"></i>
-                        <div>2018 - 2019</div>
-                        <div>
-                            <h2>Autoformation en e-commerce</h2>
-                            <h3>Une année intensive pour maîtriser le commerce en ligne</h3>
-                            <p>Prestashop, WordPress. Mise en place de boutiques en ligne. Google Analytics et Webmaster
-                                Tools. Compréhension des places de marché: eBay, Amazon, Ali-Express, C Discount, Google
-                                Shopping. Réseaux sociaux. Référencement naturel. Acquisition de trafic en ligne.
-                                Analyse concurrentielle. Rédaction de cahier des charges, etc.</p>
-                        </div>
-                    </section>
-                    <section> <i class="far fa-circle"></i>
-                        <div>2020 - 2021</div>
-                        <div>
-                            <h2>Remise a niveau en HTML5 et CSS3</h2>
-                            <h3>Formation au C.R.I.R de Rochefort</h3>
-                            <p>Utiliser le langage HTML et les styles CSS pour construire des pages de sites Web, et
-                                connaître les dernières balises HTML5 et CSS3.</p>
-                        </div>
-                    </section>
-                    <section> <i class="far fa-dot-circle"></i>
-                        <div>2020 - 2021</div>
-                        <div>
-                            <h2>Développeur web</h2>
-                            <h3>Formation diplômante chez OpenClassrooms</h3>
-                            <p>Découper, assembler et intégrer tous les éléments d’une maquette graphique.<br>
-                                Ajouter du contenu audio et vidéo en HTML5.<br>
-                                Animer les pages web avec CSS3.<br>
-                                Appliquer les standards du web et les normes en vigueur.<br>
-                                Construire un site web fluide s’adaptant à tout type d’écran.<br>
-                                Améliorer le référencement naturel en utilisant les balises selon leur sémantique.<br>
-                                Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript.<br>
-                                Se connecter à un service web pour exploiter des données tierces (API).<br>
-                                Gérer les comptes utilisateurs.<br>
-                                Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.<br>
-                                Créer, gérer et afficher le contenu d’une base de données.
-                            </p>
-                        </div>
-                    </section>
-                </article>
-                <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Diplômes -->
-                <article>
-                    <div class="titles"> <i class="fas fa-briefcase"></i>
-                        <h3>Diplômes</h3>
-                    </div>
-                    <div>
-                        <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer1');" />
-                        <div id="a_masquer1" style="display:none">
-                            <br>
-                            <br>
-                            <section> <i class="far fa-circle"></i>
-                                <div>Informatique</div>
-                                <div>
-                                    <h2>Développement web</h2>
-                                    <p> BAC+2 (BTS) Développeur Web.<br>
-                                        BMP1 Crypto régulation en transmissions informatiques (école militaire).<br>
-                                        T.E.S.O.L. Teacher of English to Speakers of Other Languages.<br>
-                                        Alternance certifiée d'Infographiste Maquettiste exécutant PAO (1600h).<br>
-                                        Certificats de formation sur les CMS Prestashop & WordPress.<br>
-                                        Certificat de formation HTML5/CSS3.<br>
-                                        Certificats (130) sur les technologie du web.</p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>Maritime</div>
-                                <div>
-                                    <h2>Voile hauturière</h2>
-                                    <p> C.I.N. Certificat d'initiation nautique.<br>
-                                        P.C.M. Motoriste maritime.<br>
-                                        C.T.E. Certificat restreint de radiotéléphonie.<br>
-                                        B.N.S. Brevet national de secourisme.<br>
-                                        Diplôme de Moniteur fédéral croisière hauturière.</p>
-                                </div>
-                            </section>
-                        </div>
-                    </div><br>
-                </article>
-                <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Expérience professionnelle -->
-                <article>
-                    <div class="titles"> <i class="fas fa-briefcase"></i>
-                        <h3>Expérience professionnelle</h3>
-                    </div>
-                    <div>
-                        <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer');" />
-                        <div id="a_masquer" style="display:none">
-                            <br>
-                            <br>
-                            <section> <i class="far fa-circle"></i>
-                                <div>1983 - 1988
-                                    <br>France-Montélimar </div>
-                                <div>
-                                    <h2>Armée Française</h2>
-                                    <h3>Sous officier</h3>
-                                    <p> Militaire de carrière, formateur en transmissions et systèmes de cryptage
-                                        informatique. formation primaire sur le réseau d'agences de projets de recherche
-                                        avancée (DARPA) puis travail sur MILNET, SFNet et ARPANET. Missions dans les
-                                        ambassades et consulats. </p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>1989 - 1991
-                                    <br>France-Monde </div>
-                                <div>
-                                    <h2>SAS Security</h2>
-                                    <h3>Coordinateur d'équipes de surveillance</h3>
-                                    <p> Surveillance des réseaux dans une société de sécurité et de protection des
-                                        intérêts français à l'étranger. Sécurisation de sites sensibles, formation du
-                                        personnel local. </p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>1992 - 1994
-                                    <br>France-Europe </div>
-                                <div>
-                                    <h2>Les Glénans</h2>
-                                    <h3>Moniteur de voile à l’école des Glénans.</h3>
-                                    <p> Instructeur de voile hauturière, diplômé marine marchande, spécialiste de la
-                                        survie en mer. Je donnais des cours à terre et en mer sur la navigation, la
-                                        météo, la gestion de la vie en groupe à bord d'un navire de plaisance. Détaché
-                                        dans toutes les bases nautiques de l'association. </p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>1995 - 1996
-                                    <br>France-Paris </div>
-                                <div>
-                                    <h2>L'école Marcorel</h2>
-                                    <h3>Formation maquettiste exécutant P.A.O (infographiste).</h3>
-                                    <p>Apprentissage de la chaîne graphique avec Photoshop, Illustrator, Quark Xpress.
-                                        Réalisation de photomontage et travaux d'impression.</p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>1997 - 1999
-                                    <br>France-Caraïbes </div>
-                                <div>
-                                    <h2>Mooring</h2>
-                                    <h3>Convoyeur de voilier.</h3>
-                                    <p> Skipper professionnel, BPPV Brevet Patron Plaisance Voile. Formation mécanique
-                                        marine diesel. 750 kw. Brevet fédéral voile habitable 1er degré FFVoile. Stage
-                                        World Sailing - SMF - Survie Mer Formation et STCW sécurité maritime. CRR
-                                        certificat radiotéléphoniste restreint. AFPS premier secours. Formation médicale
-                                        niveau 2 et 3. Permis hauturier. J'effectuais le convoyage de bateaux pour
-                                        particuliers ou pour des missions océanographiques, projets sportifs /aventures
-                                        sur voilier monocoque ou multicoque de série, en mer en toutes saisons. Océan
-                                        Atlantique, Mer des Caraïbes, Afrique du sud. </p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>2000 - 2004
-                                    <br>Inde-Pondichéry-Thaïlande </div>
-                                <div>
-                                    <h2>Lumtadulok SA</h2>
-                                    <h3>Infographiste - Technicien informatique</h3>
-                                    <p> Création de l'agence de reprographie Lumtadulok en Asie. Logo, Flyer, menu de
-                                        restaurant et autres impressions sérigraphiques... Technicien informatique.
-                                        Conditionneur, installateur de matériel informatique et formateur sur le terrain
-                                        afin de permettre aux utilisateurs de maîtriser de nouveaux outils informatiques
-                                        fréquemment utilisés dans le cadre du travail.</p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-circle"></i>
-                                <div>2005 - 2010
-                                    <br>Thaïlande-Bangkok </div>
-                                <div>
-                                    <h2>cpl-inter.com</h2>
-                                    <h3>Acheteur/Fournisseur international (zone Asie).</h3>
-                                    <p> Mise en place de réseaux d’achats, import, export. En charge des relations avec
-                                        les acheteurs Européens. Développement de structures d'accueil au publique
-                                        international. Acheteur international/exportateur de marchandises en zone Asie.
-                                        Développement de solution logistique pour permettre à des importateurs la
-                                        création de leurs produits, l'acheminement et la diffusion.</p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-dot-circle"></i>
-                                <div>2010 - 2020
-                                    <br>France-Thaïlande </div>
-                                <div>
-                                    <h2>Oley Ola cie</h2>
-                                    <h3>Responsable du développement</h3>
-                                    <p> Entreprise familiale de créations, fabrications, importations et ventes en
-                                        boutique et sur les places de marchés, grossiste et détaillant. Mise en place
-                                        d'une chaîne de fabrication en Asie. Création de la logistique de transport
-                                        international vers la zone Europe. Développement des zones de ventes. Mise en
-                                        place de boutiques en ligne avec le CMS Prestashop. Utilisation de WordPress.
-                                        Mise en place du SEO. Je suis amené à gérer et encadrer les différentes
-                                        activités, telles que le développement des gammes de produits, ou encore
-                                        l’analyse des données chiffrées et statistiques. Je mène une veille
-                                        concurrentielle permanente et travaille sur la conception et le
-                                        lancement de nouveaux outils commerciaux et marketing. Je construis un plan
-                                        marketing opérationnel pertinent et adapté aux attentes du marché. </p>
-                                </div>
-                            </section>
-                            <section> <i class="far fa-dot-circle"></i>
-                                <div>2020 - Maintenant
-                                    <br>France </div>
-                                <div>
-                                    <h2>Freelance</h2>
-                                    <h3>Développeur Web</h3>
-                                    <p>Développeur Web, je vous propose des solutions clés en main de la conception au
-                                        déploiement. Création de site vitrine, travail avec WordPress, e-commerce avec
-                                        Prestashop. Audit et stratégie SEO. Mise en place de sites personnels... Je peux
-                                        également intervenir à la demande sur des projets en cours. </p>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </main>
-        <article>
-            <footer class="row">
-                <div class="col-sm-12 col-md-3 col-lg-3">
-                    <h2 class="bandeau">loisirs</h2>
-                    <div> <i class="fas fa-anchor" title="Je suis Fan de voile"></i> <i class="fas fa-laptop-code"
-                            title="J'aime travailler avec un ordinateur"></i> <i class="fas fa-globe-europe"
-                            title="Pays visités, France, Belgique, Luxembourg, Hollande, Allemagne, Norvège, Suisse, Autriche, Italie, Espagne, Maroc, Portugal, Guadeloupe, Martinique, Inde, Népal, Russie, Angleterre, Afrique du Sud, Thaïlande, Laos, Vietnam, Birmanie, Malaisie, Singapour, Indonésie, Israël, Égypte."></i>
-                    </div>
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+        <!-- Inclusion des icônes FontAwesome pour l'utilisation d'icônes vectorielles -->
+        <link href="font_awesome/css/all.css" rel="stylesheet">
+
+        <!-- Inclusion des feuilles de style CSS -->
+        <link href="./bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!-- Liens vers les feuilles de style css Minifiées, normalement inutile si c'est juste le minifié -->
+        <link rel="stylesheet" type="text/css" href="./css/style-min.css">
+
+        <!-- Manifest pour les Progressive Web Apps (PWA) -->
+        <link rel="manifest" href="site.webmanifest">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <header class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3"> <img class="img-fluid" src="./image/tiri.png" alt="Profile picture" title="Un sourire sincère dégage une impression de fraîcheur qui est le propre des êtres humains. Si nous voulons voir apparaître de tels sourires, c’est à nous d’en créer les causes.">
                 </div>
                 <div class="col-sm-12 col-md-9 col-lg-9">
-                    <div class="titles"> <i class="fas fa-pencil-alt "></i>
+                    <h1><span>Thierry</span>Laval</h1>
+                    <!--  J'ai réduit le soulignement du titre dans le css avec un <span> sur le h3 et j'ai mis un <mark> pour surligner freelance  -->
+                    <h3><span>Développeur web</span><mark> freelance</mark></h3>
+                </div>
+            </header>
+
+            <main class="row">
+                <aside class="col-sm-12 col-md-3 col-lg-3">
+                    <section>
+                        <h2 class="bandeau">contact</h2>
+                        <ul>
+                            <li><strong>Adresse</strong>
+                                <p>Saint Sornin
+                                    <br>Charente maritime
+                                </p><br>
+                                <!--  J'ai installé ici la carte de Google dans un iframe et dans un div avec une classe pour régler le problème du responsive avec ajout dans le css  -->
+                                <div class="map-responsive">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193173.6353829302!2d-1.0653634472974334!3d45.834382761475474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48016da2befad6b9%3A0x73a9c5f5b744182!2s1%20Pl.%20Saint-Saturnin%2C%2017600%20Saint-Sornin!5e0!3m2!1sfr!2sfr!4v1632214431448!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                </div>
+                                <!--  Fin du rajout de la carte de Google  -->
+                            </li>
+                            <li><strong>Téléphone</strong>
+                                <p><a href="tel:+33640663199">06 40 66 31 99</a></p>
+                            </li>
+                            <li><strong>Email</strong>
+                                <p><a href="mailto:contact@thierrylaval.dev">contact@thierrylaval.dev</a></p>
+                            </li>
+                            <li><strong>Portfolio</strong>
+                                <p><a href="https://thierrylaval.dev" target="_blank">https://thierrylaval.dev</a></p>
+                            </li>
+                            <li><strong>profils professionnels</strong>
+                                <p><a href="https://linkedin.com/in/thierry-laval" target="_blank">Linkedin</a> /
+                                    <a href="https://www.malt.fr/profile/thierrylaval" target="_blank">Malt</a>
+                                </p>
+                            </li>
+                            <li><strong>Projets en cours</strong>
+                                <p><a href="https://github.com/thierry-laval" target="_blank">Mon Github</a></p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="aboutme">
+                        <h2 class="bandeau">À propos de moi</h2>
+                        <p>Un parcours atypique, riche et varié m'a permis d'acquérir un grand nombre de compétences que j'intègre dans toutes mes activités.</p>
+                        <p>Intègre, honnête, doté d'un sens aigu de la communication et du respect, je privilégie la gestion des conflits par le dialogue, tout en maintenant un bon équilibre et une grande capacité d'adaptation.</p>
+                        <p>Mon goût prononcé pour les voyages et la vie en plein air m'a conduit à visiter, habiter et travailler dans de nombreux pays, ce qui m'a permis de comprendre différentes cultures.</p>
+                        <p>J'ai appris à m'adapter à chaque demande afin de proposer une offre entièrement personnalisée.
+                        </p>
+
+                    </section>
+                    <!--  J'ai installé ici un petit effet parallax  -->
+                    <div class="img1"></div>
+                </aside>
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <!--  J'ai rajouté ici le code pour le block de texte Formations -->
+                    <article>
+                        <div class="titles"> <i class="fas fa-graduation-cap fa-2x"></i>
+                            <h3>formation</h3>
+                        </div>
+                        <section> <i class="far fa-circle"></i>
+                            <div>1983 - 1988</div>
+                            <div>
+                                <h2>École Militaire des Transmissions</h2>
+                                <h3>Formateur en Cryptorégulation</h3>
+                                <p>Brevet militaire de <strong>crypto-régulation</strong> en transmissions informatiques. Maîtrise des méthodes et techniques pédagogiques d’enseignement. Instructeur en transmissions informatiques.</p>
+                            </div>
+                        </section>
+                        <section> <i class="far fa-circle"></i>
+                            <div>1989 - 2009</div>
+                            <div>
+                                <h2>Je suis parti visiter le monde (+ de 21 pays)</h2>
+                                <h3>Rencontrer les gens, apprendre les différentes cultures</h3>
+                                <p>Professionnel polyvalent avec une expérience en mode nomade dans les domaines suivants : sécurité, convoyage de voiliers, gestion d’hébergements et de commerces, direction d’agence d’infographie et de reprographie, vente et installation de matériel informatique, achats internationaux et export, création de sites web, enseignement de l’informatique et de l’anglais.</p>
+                            </div>
+                        </section>
+                        <section> <i class="far fa-circle"></i>
+                            <div>2010 - 2017</div>
+                            <div>
+                                <h2>Chef d'entreprise</h2>
+                                <h3>France / Asie du sud-est</h3>
+                                <p>Co-créateur de la marque Oley Ola Cie, j’ai participé à toutes les étapes : conception
+                                    des produits, mise en place de la chaîne de fabrication, importation et commercialisation en France. J’ai développé la boutique en ligne de l’entreprise oleyolacie.com sous PrestaShop.</p>
+                            </div>
+                        </section>
+                        <section> <i class="far fa-circle"></i>
+                            <div>2018 - 2019</div>
+                            <div>
+                                <h2>Autoformation en e-commerce</h2>
+                                <h3>Acquisition complète des compétences du commerce en ligne</h3>
+                                <p>Création et gestion de boutiques en ligne avec Prestashop et WordPress. Maîtrise de Google Analytics et Webmaster Tools. Connaissance des places de marché (eBay, Amazon, AliExpress, Cdiscount, Google Shopping). Gestion des réseaux sociaux, SEO, acquisition de trafic, analyse concurrentielle, rédaction de cahiers des charges.</p>
+                            </div>
+                        </section>
+                        <section> <i class="far fa-circle"></i>
+                            <div>2020 - 2021</div>
+                            <div>
+                                <h2>Remise à niveau HTML5 & CSS3</h2>
+                                <h3>Formation intensive au C.R.I.R de Rochefort</h3>
+                                <p>Mise à jour sur les dernières versions et bonnes pratiques du HTML5 et CSS3, avec exercices pratiques de construction de pages web.</p>
+                            </div>
+                        </section>
+                        <section> <i class="far fa-dot-circle"></i>
+                            <div>2020 - 2021</div>
+                            <div>
+                                <h2>Développeur web – remise à niveau</h2>
+                                <h3>Formation diplômante chez OpenClassrooms</h3>
+                                <p>Remise à niveau et perfectionnement en intégration de maquettes graphiques, HTML5 et CSS3 pour contenu multimédia et animation, développement de sites web responsive, optimisation SEO, interactivité avec JavaScript, utilisation d’API pour exploiter des données externes, gestion de comptes utilisateurs, conception maintenable avec gestion des erreurs, création et gestion de bases de données.</p>
+                            </div>
+                        </section>
+                    </article>
+                    <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Diplômes -->
+                    <article>
+                        <div class="titles"> <i class="fas fa-briefcase"></i>
+                            <h3>Diplômes</h3>
+                        </div>
+                        <div>
+                            <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer1');" />
+                            <div id="a_masquer1" style="display:none">
+                                <br>
+                                <br>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>Informatique</div>
+                                    <div>
+                                        <h2>Développement web</h2>
+                                        <p>BAC+2 (BTS) Développeur Web.<br>
+                                            BMP1 Crypto-régulation des transmissions informatiques (école militaire).<br>
+                                            T.E.S.O.L. Teacher of English to Speakers of Other Languages.<br>
+                                            Alternance certifiée d'Infographiste Maquettiste PAO (1600 h).<br>
+                                            Certifications sur les CMS Prestashop et WordPress.<br>
+                                            Certifications sur le HTML5/CSS3.<br>
+                                            Plus de 130 certificats couvrant les technologies du web.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>Maritime</div>
+                                    <div>
+                                        <h2>Voile hauturière</h2>
+                                        <p> C.I.N. Certificat d'initiation nautique.<br>
+                                            P.C.M. Motoriste maritime.<br>
+                                            C.T.E. Certificat restreint de radiotéléphonie.<br>
+                                            B.N.S. Brevet national de secourisme.<br>
+                                            Diplôme de Moniteur fédéral croisière hauturière.<br>
+                                            B.P.P.V. Brevet de patron à la plaisance (voile)</p>
+                                    </div>
+                                </section>
+                            </div>
+                        </div><br>
+                    </article>
+                    <!--  J'ai rajouté ici le code pour ouvrir ou fermer le block de texte Expérience professionnelle -->
+                    <article>
+                        <div class="titles"> <i class="fas fa-briefcase"></i>
+                            <h3>Expérience professionnelle</h3>
+                        </div>
+                        <div>
+                            <input type="button" value="Ouvrir / Fermer" onclick="masquer_div('a_masquer');" />
+                            <div id="a_masquer" style="display:none">
+                                <br>
+                                <br>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>1983 - 1988
+                                        <br>France-Montélimar
+                                    </div>
+                                    <div>
+                                        <h2>Armée Française</h2>
+                                        <h3>Sous officier</h3>
+                                        <p>Militaire de carrière, formateur en transmissions et systèmes de cryptage informatique. Formation initiale sur le réseau d’agences de projets de recherche avancée (DARPA), puis travail sur MILNET, SFNet et ARPANET. Missions effectuées dans des ambassades et consulats.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>1989 - 1991
+                                        <br>France-Monde
+                                    </div>
+                                    <div>
+                                        <h2>SAS Security</h2>
+                                        <h3>Coordinateur d'équipes de surveillance</h3>
+                                        <p>Surveillance des réseaux au sein d’une société de sécurité et de protection des intérêts français à l’étranger. Sécurisation de sites sensibles et formation du personnel local.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>1992 - 1994
+                                        <br>France-Europe
+                                    </div>
+                                    <div>
+                                        <h2>Les Glénans</h2>
+                                        <h3>Moniteur de voile</h3>
+                                        <p>Instructeur de voile hauturière, diplômé de la marine marchande et spécialiste de la survie en mer. J’enseignais la navigation, la météorologie et la gestion de la vie en groupe à bord de navires de plaisance, à terre et en mer. Détaché dans toutes les bases nautiques de l’association.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>1995 - 1996
+                                        <br>France-Paris
+                                    </div>
+                                    <div>
+                                        <h2>L'école Marcorel</h2>
+                                        <h3>Formation maquettiste exécutant P.A.O (infographiste)</h3>
+                                        <p>Apprentissage de la chaîne graphique avec Photoshop, Illustrator et QuarkXPress. Réalisation de photomontages et travaux d’impression.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>1997 - 1999
+                                        <br>France-Caraïbes
+
+                                    </div>
+                                    <div>
+                                        <h2>Mooring</h2>
+                                        <h3>Convoyeur de voilier</h3>
+                                        <p>Skipper professionnel, titulaire du BPPV (Brevet Patron Plaisance Voile). Formation en mécanique marine diesel (750 kW), brevet fédéral voile habitable 1er degré (FFVoile), stage World Sailing - SMF - Survie Mer Formation et STCW sécurité maritime, certificat radiotéléphoniste restreint (CRR), AFPS (premiers secours) et formations médicales niveau 2 et 3. Permis hauturier. J’effectuais le convoyage de bateaux pour particuliers ou pour des missions océanographiques, ainsi que des projets sportifs et d’aventures sur voiliers monocoques ou multicoques, en mer et par toutes saisons. Zones naviguées : Océan Atlantique, Mer des Caraïbes, Afrique du Sud.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>2000 - 2004
+                                        <br>Inde – Pondichéry – Thaïlande
+
+                                    </div>
+                                    <div>
+                                        <h2>Lumtadulok SA</h2>
+                                        <h3>Infographiste – Technicien informatique</h3>
+                                        <p>Création de l’agence de reprographie Lumtadulok en Asie : logo, flyers, menus de restaurant et autres impressions sérigraphiques. Technicien informatique : conditionnement, installation de matériel et formation des utilisateurs afin de leur permettre de maîtriser les outils informatiques régulièrement utilisés dans le cadre du travail.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-circle"></i>
+                                    <div>2005 - 2010
+                                        <br>Thaïlande – Bangkok
+
+                                    </div>
+                                    <div>
+                                        <h2>cpl-inter.com</h2>
+                                        <h3>Acheteur / Fournisseur international (zone Asie)</h3>
+                                        <p>Mise en place de réseaux d’achats, importation et exportation. Gestion des relations avec les acheteurs européens. Développement de structures d’accueil pour le public international. Acheteur international/exportateur de marchandises en zone Asie. Élaboration de solutions logistiques permettant aux importateurs de créer leurs produits, de les acheminer et de les diffuser efficacement.</p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-dot-circle"></i>
+                                    <div>2010 - 2020
+                                        <br>France-Thaïlande
+                                    </div>
+                                    <div>
+                                        <h2>Oley Ola Cie</h2>
+                                        <h3>Responsable du développement</h3>
+                                        <p>
+                                            Entreprise familiale spécialisée dans la création, la fabrication, l’importation et la vente en boutique ainsi que sur les places de marché, en gros et au détail. Mise en place d’une chaîne de fabrication en Asie et création de la logistique de transport international vers l’Europe. Développement des zones de vente et mise en place de boutiques en ligne avec Prestashop, utilisation de WordPress et optimisation SEO. Gestion et encadrement des activités : développement des gammes de produits, analyse des données chiffrées et statistiques, veille concurrentielle, conception et lancement de nouveaux outils commerciaux et marketing. Élaboration d’un plan marketing opérationnel pertinent et adapté aux attentes du marché.
+                                        </p>
+                                    </div>
+                                </section>
+                                <section> <i class="far fa-dot-circle"></i>
+                                    <div>2020 - Maintenant
+                                        <br>France
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <h2>Freelance</h2>
+                                            <h3>Développeur Web</h3>
+                                            <p>Développeur Web proposant des solutions clés en main, de la conception au déploiement. Création de sites vitrines, développement WordPress, e-commerce avec Prestashop. Audit et stratégie SEO. Mise en place de sites personnels. Intervention possible à la demande sur des projets existants.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </main>
+
+            <!-- Pied de page de la page, contenant loisirs et recommandations -->
+            <footer class="row">
+                <!-- Colonne loisirs -->
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <h2 class="bandeau">Loisirs</h2>
+                    <div>
+                        <!-- Icônes représentant les loisirs principaux -->
+                        <i class="fas fa-anchor" title="Je suis fan de voile"></i>
+                        <i class="fas fa-laptop-code" title="J'aime travailler avec un ordinateur"></i>
+                        <i class="fas fa-globe-europe" title="Pays visités : France, Belgique, Luxembourg, Hollande, Allemagne, Norvège, Suisse, Autriche, Italie, Espagne, Maroc, Portugal, Guadeloupe, Martinique, Inde, Népal, Russie, Angleterre, Afrique du Sud, Thaïlande, Laos, Vietnam, Birmanie, Malaisie, Singapour, Indonésie, Israël, Égypte."></i>
+                    </div>
+                </div>
+
+                <!-- Colonne recommandations -->
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                    <div class="titles">
+                        <i class="fas fa-pencil-alt"></i>
                         <h3>Recommandations</h3>
                     </div>
                     <section>
                         <div>
                             <h2>Audrey RENVOISÉ</h2>
                             <p>International trade manager</p>
-                            <p>Oley Ola cie</p> <a href="mailto:contact@oleyolacie.com">contact@oleyolacie.com</a>
+                            <p>Oley Ola Cie</p>
+                            <a href="mailto:contact@oleyolacie.com">contact@oleyolacie.com</a>
                         </div>
                         <div>
                             <h2>Farrokh BULSARA</h2>
                             <p>Facilities Manager</p>
-                            <p>Irani UK Services Ltd</p> <a
-                                href="mailto:farrokh-bulsara@gmx.co.uk">farrokh-bulsara@gmx.co.uk</a>
+                            <p>Irani UK Services Ltd</p>
+                            <a href="mailto:farrokh-bulsara@gmx.co.uk">farrokh-bulsara@gmx.co.uk</a>
                         </div>
                     </section>
                 </div>
             </footer>
-        </article>
-    </div>
-    <!--  J'ai rajouté ici le code javascript pour ouvrir ou fermer les block de texte  -->
-    <script>
-        function masquer_div(id) {
-            if (document.getElementById(id).style.display == 'none') {
-                document.getElementById(id).style.display = 'block';
-            } else {
-                document.getElementById(id).style.display = 'none';
+
+        </div>
+
+        <!--  J'ai rajouté ici le code javascript pour ouvrir ou fermer les block de texte  -->
+        <script>
+            function masquer_div(id) {
+                if (document.getElementById(id).style.display == 'none') {
+                    document.getElementById(id).style.display = 'block';
+                } else {
+                    document.getElementById(id).style.display = 'none';
+                }
             }
-        }
-    </script>
-    <!--  Fin du rajout du code javascript pour ouvrir ou fermer le block de texte  -->
+        </script>
+        <!--  Fin du rajout du code javascript pour ouvrir ou fermer le block de texte  -->
 
-    <!--  J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'évite pas la copie du code source  -->
-    <script>
-        function disableselect(e) {
-            return false
-        }
+        <!--  J'ai rajouté ici le code javascript pour bloquer le clic droit et éviter la copie, même si je suis conscient que cela n'évite pas la copie du code source  -->
+        <script>
+            function disableselect(e) {
+                return false
+            }
 
-        function reEnable() {
-            return true
-        }
-        document.onselectstart = new Function("return false")
-        document.oncontextmenu = new Function("return false")
-        if (window.sidebar) {
-            document.onmousedown = disableselect
-            document.onclick = reEnable
-        }
-    </script>
-    <!--  Fin du code javascript pour bloquer le clic droit et éviter la copie  -->
+            function reEnable() {
+                return true
+            }
+            document.onselectstart = new Function("return false")
+            document.oncontextmenu = new Function("return false")
+            if (window.sidebar) {
+                document.onmousedown = disableselect
+                document.onclick = reEnable
+            }
+        </script>
+        <!--  Fin du code javascript pour bloquer le clic droit et éviter la copie  -->
 
-</body>
+    </body>
 
 </html>
