@@ -1,20 +1,16 @@
-# Création de mon fichier gitignore en utilisant le site:
-# Created by https://www.toptal.com/developers/gitignore
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,visualstudiocode
+# ===================================================
+# 📝 .gitignore complet pour projet web CV en ligne
+# Commenté pour débutants, liens et explications inclus
+# ===================================================
 
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
+### 🍎 macOS ###
+# macOS crée automatiquement des fichiers invisibles pour son fonctionnement.
+# Ces fichiers ne servent pas dans Git et polluent le repo.
+.DS_Store              # ❌ Fichier système invisible
+.AppleDouble           # ❌ Métadonnées Apple
+.LSOverride            # ❌ Préférences locales
+Icon                   # ❌ Icône locale
+._*                    # ❌ Miniatures macOS
 .DocumentRevisions-V100
 .fseventsd
 .Spotlight-V100
@@ -22,24 +18,113 @@ Icon
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
 Network Trash Folder
 Temporary Items
 .apdisk
+# Documentation Apple : https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html
 
-### VisualStudioCode ###
+### 🖥️ Visual Studio Code ###
+# Ignorer toutes les configurations locales sauf celles nécessaires au projet
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+.history               # ❌ Historique local inutile pour Git
+# Docs VSCode : https://code.visualstudio.com/docs/editor/versioncontrol
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
+### 📦 Node / Front-end ###
+# Node.js crée ces dossiers/fichiers automatiquement. On ne versionne jamais node_modules car c'est lourd et régénérable.
+node_modules/          # ❌ Modules npm/yarn
+npm-debug.log*         # ❌ Logs npm
+yarn-debug.log*        # ❌ Logs yarn
+yarn-error.log*        # ❌ Erreurs yarn
+package-lock.json      # 🔹 Lockfile npm (optionnel selon workflow)
+yarn.lock              # 🔹 Lockfile yarn (optionnel selon workflow)
+# Docs Node.js : https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-lock-json/
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode
+### 📄 Logs ###
+*.log
+*.log.*               # ❌ Tous les fichiers de log
+
+### ⚡ Cache et Build ###
+# Dossiers et fichiers générés automatiquement lors du build
+.cache/
+.tmp/
+dist/
+build/
+out/
+*.cache
+*.tmp
+# Astuce : ces fichiers sont régénérés, inutile de les versionner
+
+### 🌐 WordPress ###
+wp-config.php                  # 🔒 Contient mots de passe/clé API
+wp-content/uploads/            # 📷 Contenu média uploadé
+wp-content/upgrade/            # 🔄 Mise à jour WordPress
+wp-content/cache/              # ⚡ Cache
+wp-content/plugins/*/node_modules/ # 📦 Dépendances plugins
+wp-content/plugins/*/build/        # ⚡ Fichiers build plugins
+# Docs WP : https://developer.wordpress.org/apis/wp-config-php/
+
+### 🛒 PrestaShop ###
+/config/settings.inc.php        # 🔒 Clés API et base de données
+/var/cache/
+/var/logs/
+/vendor/
+/themes/*/assets/cache/
+/themes/*/assets/js/
+/themes/*/assets/css/
+/modules/*/node_modules/
+/modules/*/vendor/
+# Docs PrestaShop : https://devdocs.prestashop.com/1.7/basics/installation/git/
+
+### 💻 IDE / éditeurs ###
+.idea/                       # JetBrains (PhpStorm, WebStorm)
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+# Astuce : versionner uniquement les configs essentielles du projet
+
+### 🖱️ OS générés et fichiers temporaires ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*~.nib
+
+### 🔄 Autres fichiers temporaires ou backups ###
+*.bak
+*.tmp
+*.temp
+*.old
+*.orig
+*.rej
+
+### 📁 Divers fichiers ignorés pour développement web ###
+# Permet d’ignorer tout ce qui peut être régénéré automatiquement
+.sass-cache/
+.cache/
+.tmp/
+dist/
+build/
+*.log
+*.pid
+*.seed
+*.pid.lock
+# Pour les environnements Docker ou Vagrant
+.env
+.env.local
+.env.*.local
+docker-compose.override.yml
+# Pour les bases de données locales
+*.sqlite
+*.sqlite3
+
+# ===================================================
+# ✅ FIN - .gitignore interactif pour débutants
+# Chaque section explique ce qu’elle fait et pourquoi on ignore ces fichiers
+# ===================================================
