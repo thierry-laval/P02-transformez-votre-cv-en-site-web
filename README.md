@@ -71,12 +71,25 @@ Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur
 
 Afin d'améliorer l'expérience utilisateur (UX) et l'esthétique du CV, plusieurs modifications ont été apportées :
 
-* **Système d'ouverture/fermeture (Accordéon) :** Ajout d'interactivité JavaScript pour masquer ou afficher les sections volumineuses (*Diplômes* et *Expérience professionnelle*), permettant une lecture plus fluide et une mise en page aérée.
+* **Système d'ouverture/fermeture (Accordéon) :** Ajout d'interactivité JavaScript pour masquer ou afficher les sections volumineuses (_Diplômes_ et _Expérience professionnelle_), permettant une lecture plus fluide et une mise en page aérée.
 * **Filtrage dynamique des pays :** Implémentation d'un système de filtres par zone géographique (Europe, Asie, Afrique, etc.) pour la liste des pays visités, améliorant la lisibilité des données.
 * **Optimisation de la liste des pays :** Remplacement des éléments de formulaire (`input checkbox`) par des puces graphiques (`FontAwesome`) pour un rendu plus épuré.
 * **Personnalisation CSS :** Création de la classe `.travel-bullet` permettant d'harmoniser la couleur des puces avec la charte graphique du site (Bleu `#00BFF4`).
 * **Accessibilité (A11y) :** Utilisation de boutons sémantiques et de l'attribut `aria-expanded` pour rendre le système de toggle compréhensible par les technologies d'assistance.
 * **Maintenance du code :** Mise à jour des fichiers CSS et CSS minifiés pour assurer une cohérence visuelle sur tous les environnements.
+* **Système d'ouverture/fermeture (Accordéon) :** Ajout d'interactivité JavaScript pour masquer ou afficher les sections volumineuses (_Diplômes_ et _*_Expérience_ professionnelle_).
+* **Transitions fluides (UX) :** Remplacement des changements d'état brutaux par des animations CSS (`max-height` et `opacity`) pour un rendu moderne et une lecture fluide.
+* **Variables CSS (Maintainability) :** Centralisation de la charte graphique via des variables `:root` (`--primary-blue`, etc.), facilitant la maintenance et les modifications globales du thème.
+* **Filtrage dynamique des pays :** Système de filtres par zone géographique avec animations de fondu (`fade-in`) pour une meilleure clarté visuelle.
+* **Optimisation de la liste des pays :** Remplacement des éléments de formulaire (`input checkbox`) par des puces graphiques (`FontAwesome`) colorées pour un design plus épuré.
+* **Optimisation pour l'impression :** Intégration de règles `@media print` pour masquer les éléments interactifs et garantir un rendu PDF professionnel (sections forcées en mode ouvert).
+* **Ergonomie Mobile :** Désactivation des interactions tactiles sur la carte Google Maps lors du défilement pour éviter les blocages de navigation sur smartphone.
+* **Architecture logicielle :** Extraction du code JavaScript vers un fichier externe (`script.js`) pour une meilleure séparation des préoccupations et une plus grande lisibilité.
+* **Corrections typographiques et affichage :** 
+  * Ajustement précis du `line-height` et du `padding-top` sur les titres `h2` pour éviter le rognage des caractères de la police personnalisée.
+  * Correction de la règle pour les balises `<strong>` afin d'utiliser la variante _Bold_ réelle de la police, garantissant un contraste visuel effectif.
+* **Maintenance et Accessibilité :** Utilisation d'attributs `aria-expanded` pour les lecteurs d'écran et synchronisation rigoureuse des fichiers CSS sources et minifiés.
+
 
 ***
 
