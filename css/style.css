@@ -1,10 +1,28 @@
 /* Formation OpenClassrooms - Projet 2 - Développeur Web - Thierry Laval */
 
-/* A la question de pourquoi avoir utiliser des unités de mesures en vw, em... J'ai pris reference sur le css3 et voulu tester l'ensemble. Je suis conscient qu'en temps normal je peux écrire le code plus simplement. Ref:https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php*/
+/*
+    Feuille de style principale du CV.
+    Les commentaires sont volontairement détaillés car ce projet est un projet scolaire :
+    ils expliquent les choix de structure, de responsive design et de mise en page.
+*/
 
-/* Je me suis servi du module des boîtes flexibles, aussi appelé "flexbox", a été conçu comme un modèle de disposition unidimensionnel et comme une méthode permettant de distribuer l'espace entre des objets d'une interface ainsi que de les aligner. Ref:https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox*/
+/*
+    A la question de pourquoi avoir utiliser des unités de mesures en vw, em...
+    J'ai pris reference sur le css3 et voulu tester l'ensemble.
+    Je suis conscient qu'en temps normal je peux écrire le code plus simplement.
+    Ref: https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php
+*/
 
-/*fonts*/
+/*
+    Je me suis servi du module des boîtes flexibles, aussi appelé "flexbox".
+    Flexbox est conçu comme un modèle de disposition unidimensionnel, permettant
+    de distribuer l'espace entre des objets d'une interface et de les aligner.
+    Ref: https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Flexible_Box_Layout/Concepts_de_base_flexbox
+*/
+
+/* ==========================================================================
+   1. Polices personnalisées
+   ========================================================================== */
 
 @font-face {
     font-family: "caviar_dreamsregular";
@@ -16,15 +34,17 @@
 }
 
 @font-face {
-    font-family: 'caviar_dreamsbold';
-    src: url('../font/Caviar_Dreams_Bold-webfont.eot');
-    src: url('../font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
-        url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype'),
-        url('../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold') format('svg');
+    font-family: "caviar_dreamsbold";
+    src: url("../font/Caviar_Dreams_Bold-webfont.eot");
+    src: url("../font/Caviar_Dreams_Bold-webfont.eot?#iefix") format("embedded-opentype"),
+        url("../font/Caviar_Dreams_Bold-webfont.woff") format("woff"),
+        url("../font/Caviar_Dreams_Bold-webfont.ttf") format("truetype"),
+        url("../font/Caviar_Dreams_Bold-webfont.svg#caviar_dreamsbold") format("svg");
 }
 
-/*BODY*/
+/* ==========================================================================
+   2. Styles généraux
+   ========================================================================== */
 
 body {
     background-color: #e6e6e6;
@@ -35,73 +55,44 @@ body {
 }
 
 img {
-    border-radius: 50%;
     border: 2px #000000 solid;
-}
-{
-    overflow: hidden;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
-    border: 4px solid #FFFFFF;
-    width: 216px;
-    /*dimensions exactes de l'image = maquette*/
-    height: 216px;
-    /*dimensions exactes de l'image = maquette*/
 }
 
-header div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 3vh;
+a {
+    color: #000000;
+    text-decoration: none;
 }
 
-/*HEADER TITLE*/
-
-header div:nth-child(2) {
-    font-family: "caviar_dreamsregular";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5vw;
+a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
-header h1 {
-    font-size: 3em;
-    line-height: 2px;
-    text-transform: uppercase;
-    height: 8vh;
-    display: flex;
-    align-items: center;
-    margin: 0;
+a:focus,
+button:focus {
+    outline: 2px solid #00BFF4;
+    border-radius: 2px;
 }
 
-header h1 span {
-    color: #01C0F4;
-    padding-right: 1vw;
-    padding-top: 0.5vh;
-    font-family: "caviar_dreamsbold";
-    height: 8vh;
-    display: flex;
-    align-items: center;
+button {
+    cursor: pointer;
+    padding: 0.5em 1em;
 }
 
-header h3 {
-    font-family: arial, sans-serif;
-    font-size: 1em;
-    margin-bottom: 0;
+iframe {
+    border-width: 0;
 }
 
-header h3 span {
-    -webkit-text-decoration-line: underline;
-    text-decoration-line: underline;
-    -webkit-text-decoration-style: solid;
-    text-decoration-style: solid;
-    -webkit-text-decoration-color: #00BFF4;
-    text-decoration-color: #00BFF4;
-    font-size: 1em;
-}
+/* ==========================================================================
+   3. Structure générale Bootstrap
+   ========================================================================== */
+
+/*
+    Ces règles personnalisent les colonnes Bootstrap utilisées dans la maquette.
+    Dans un projet plus récent, on pourrait ajouter des classes dédiées comme
+    .cv-sidebar et .cv-content pour éviter de cibler directement .col-lg-3/.col-lg-9.
+*/
 
 .col-lg-3,
 .col-lg-9 {
@@ -116,94 +107,212 @@ header h3 span {
     background-color: #FFFFFF;
 }
 
-/*CONTACT*/
+/* ==========================================================================
+   4. En-tête du CV
+   ========================================================================== */
+
+header div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh;
+}
+
+header div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5vw;
+    font-family: "caviar_dreamsregular";
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    margin: 0;
+    font-size: 3em;
+    line-height: 2px;
+    text-transform: uppercase;
+}
+
+header h1 span {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    padding-top: 0.5vh;
+    padding-right: 1vw;
+    color: #01C0F4;
+    font-family: "caviar_dreamsbold";
+}
+
+header h3 {
+    margin-bottom: 0;
+    font-family: arial, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4;
+}
+
+header h3 span {
+    color: inherit;
+    font-size: 1.3em;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    -webkit-text-decoration-style: solid;
+    text-decoration-style: solid;
+    -webkit-text-decoration-color: #00BFF4;
+    text-decoration-color: #00BFF4;
+}
+
+/* ==========================================================================
+   5. Colonne de gauche : contact et présentation
+   ========================================================================== */
 
 ul {
-    list-style-type: none;
-    font-size: 0.9em;
     padding: 2vw 0 2vh 2vw;
+    font-size: 0.9em;
+    list-style-type: none;
 }
 
 li {
-    padding-bottom: 0.8em;
-    font-size: 0.9em;
     margin-bottom: 0.5em;
+    padding-bottom: 0.8em;
+    font-size: 1em;
 }
 
 li p {
     margin: 0;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+/* Réinitialisation de l'interligne Bootstrap uniquement dans la colonne de gauche. */
+aside {
+    line-height: normal;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: black;
+li strong {
+    font-family: "caviar_dreamsregular";
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
 
 .bandeau {
-
-    background-color: #FFFFFF;
-    border-top: 3px solid #000000;
-    border-bottom: 3px solid #000000;
-    height: 6vh;
-    color: #00BFF4;
-    text-transform: uppercase;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 6vh;
+    margin: 0;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    background-color: #FFFFFF;
+    color: #00BFF4;
     font-family: "caviar_dreamsbold";
     font-size: 1.2em;
-    margin: 0;
+    text-transform: uppercase;
 }
 
 .aboutme p {
-    line-height: 1em;
-    font-size: 0.9em;
-    text-align: left;
-    margin: 50px 35px 50px 35px;
+    margin: 30px 35px;
     font-family: arial, sans-serif;
+    font-size: 1em;
+    text-align: left;
 }
 
-/*PARCOURS - TITRES ET ICONES*/
+/* Carte Google responsive : le ratio est conservé grâce au padding-bottom. */
+.map-responsive {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-right: 27px;
+}
+
+/* Effet parallax décoratif placé sous la présentation. */
+.img1 {
+    height: 150px;
+    background-image: url("https://github.com/thierry-laval/cv/blob/master/image/image-du-parallax.jpeg?raw=true");
+    background-attachment: fixed;
+    background-position: 0 center;
+    background-size: contain;
+}
+
+/* ==========================================================================
+   6. Titres de sections et boutons d'ouverture
+   ========================================================================== */
 
 .titles {
-    border-bottom: 2px solid;
-    border-bottom-color: #000000;
-    font-family: "caviar_dreamsregular";
-    text-transform: uppercase;
-    margin-bottom: 5vh;
     display: flex;
     align-items: center;
     height: 6vh;
+    margin-bottom: 5vh;
+    border-bottom: 2px solid #000000;
+    font-family: "caviar_dreamsregular";
+    text-transform: uppercase;
+}
+
+/*
+    Quand un bloc accordéon est fermé, le contenu est en display:none.
+    Cette règle évite de garder une grande marge vide sous le titre fermé.
+*/
+article:has(> .toggle-content[style*="display:none"]) .titles {
+    margin-bottom: 0;
 }
 
 .titles h3 {
-    font-size: 1.3em;
-    font-family: "caviar_dreamsbold";
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: "caviar_dreamsbold";
+    font-size: 1.3em;
 }
 
 .titles .fas {
-    font-size: 2em;
-    color: #00BFF4;
-    padding-right: 20px;
     display: flex;
     align-items: center;
+    padding-right: 20px;
+    color: #00BFF4;
+    font-size: 2em;
 }
 
-/*FORMATION - EXPERIENCE Titres*/
+/* Boutons toggle pour les blocs Diplômes et Expérience professionnelle. */
+.toggle-btn {
+    margin-left: 0.5em;
+    padding: 0;
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+.toggle-btn:hover {
+    color: #00BFF4;
+}
+
+/* Puces pour la liste des pays */
+.travel-bullet {
+    color: #00BFF4;
+    font-size: 0.6em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+/* ==========================================================================
+   7. Contenu principal : formation, diplômes et expérience
+   ========================================================================== */
 
 main article,
 footer .col-lg-9 {
-    padding: 0 5vw 0 5vw;
+    padding: 0 5vw;
 }
-
-/*PARCOURS - Formation*/
 
 main article section {
     display: flex;
@@ -211,106 +320,154 @@ main article section {
 
 main article section i {
     margin-right: 1vw;
+    padding-top: 0.15em;
+    line-height: 1.4;
 }
 
-/*PARCOURS DATES*/
+/* Colonne des dates dans les blocs de parcours. */
 main article section div:nth-child(2) {
+    flex: 0 0 7vw;
     margin-right: 4vw;
-    font-size: 0.7em;
-    min-width: 7vw;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 main article section h2 {
-    font-size: 1.2em;
-    text-transform: uppercase;
     font-family: "caviar_dreamsbold";
+    font-size: 1.2em;
     line-height: 0.8em;
+    text-transform: uppercase;
 }
 
 main article section h3 {
+    font-family: "caviar_dreamsregular";
     font-size: 0.9em;
     text-transform: uppercase;
-    font-family: "caviar_dreamsregular";
 }
 
 main article section p {
-    font-size: 0.8em;
     padding-bottom: 3vh;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
-/*FOOTER*/
+/* Liste interactive des pays visités. */
+.travel-toggle {
+    margin-left: 0.35em;
+}
+
+.travel-panel {
+    margin-bottom: 3vh;
+}
+
+.travel-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.travel-filters button {
+    border: 1px solid #00BFF4;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.travel-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.35em 1.5em;
+    font-family: arial, sans-serif;
+    font-size: 0.9em;
+}
+
+.travel-list label {
+    display: block;
+}
+
+.travel-list input {
+    margin-right: 0.4em;
+}
+
+.travel-list label.hidden {
+    display: none;
+}
+
+/* ==========================================================================
+   8. Pied de page
+   ========================================================================== */
 
 footer {
-    height: 40vh;
+    height: 35vh;
 }
-
-/*LOISIRS*/
 
 footer .col-lg-3 {
-    padding-top: 20vh;
-}
-
-/*LOISIRS .FAS*/
-
-footer .col-lg-3 i {
-    font-size: 2em;
-    border: 2px white solid;
-    padding: 10px;
-    border-radius: 50%;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
 }
 
 footer .col-lg-3 div {
     display: flex;
+    flex: 1;
+    align-items: center;
     justify-content: space-around;
-    margin: 2vh;
+    margin: 0 2vh;
 }
 
-footer section {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer section div {
-    width: 50%;
-}
-
-footer section h2 {
-    font-size: 1.1em;
-    margin-bottom: 3vh;
-}
-
-footer section p,
-footer section a {
-    font-size: 0.8em;
-    line-height: 0.4em;
+/* Icônes des loisirs. */
+footer .col-lg-3 i {
+    padding: 10px;
+    border: 2px #FFFFFF solid;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 2em;
 }
 
 footer .col-lg-9 {
     padding-top: 5vh;
 }
 
-/*RESPONSIVE VERSION*/
+footer section {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+}
+
+footer section div {
+    width: 40%;
+    text-align: left;
+}
+
+footer section h2 {
+    margin-bottom: 3vh;
+    font-size: 1.1em;
+}
+
+footer section p,
+footer section a {
+    font-size: 1em;
+    line-height: 0.4em;
+}
+
+/* ==========================================================================
+   9. Responsive : mobile
+   ========================================================================== */
 
 @media (max-width: 767px) {
-
     .container {
         max-width: 100%;
     }
 
     header {
-        background-color: #00BFF4;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        background-color: #00BFF4;
     }
 
     header div:first-child {
         max-width: 60%;
-    }
-
-    header h1 {
-        font-size: 2em;
-        justify-content: center;
     }
 
     header div:nth-child(2) {
@@ -318,17 +475,22 @@ footer .col-lg-9 {
         background-color: #00BFF4;
     }
 
+    header h1 {
+        justify-content: center;
+        font-size: 2em;
+    }
+
     header h1 span {
+        padding-top: 0;
         color: #000000;
         font-family: "caviar_dreamsregular";
-        padding-top: 0;
     }
 
     header h3 {
-        font-size: 0.9em;
         display: flex;
         justify-content: center;
         padding-bottom: 5vh;
+        font-size: 0.9em;
     }
 
     aside {
@@ -350,11 +512,11 @@ footer .col-lg-9 {
     }
 
     ul {
-        text-align: center;
-        font-size: 1em;
-        padding-bottom: 0;
         margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 1em;
         font-weight: 600;
+        text-align: center;
     }
 
     li strong,
@@ -367,13 +529,13 @@ footer .col-lg-9 {
     }
 
     .titles {
-        background-color: #FFFFFF;
+        height: 9vh;
+        margin-top: 4vh;
         border-top: 3px solid #000000;
         border-bottom: 3px solid #000000;
-        height: 9vh;
+        background-color: #FFFFFF;
         color: #00BFF4;
         font-size: 0.8em;
-        margin-top: 4vh;
     }
 
     .titles h3 {
@@ -393,24 +555,20 @@ footer .col-lg-9 {
         padding: 0;
     }
 
-    /*PARCOURS - Formation*/
-
     main article section {
-        display: flex;
         flex-wrap: wrap;
-        padding: 2vh 2vw 0 2vw;
-        border: 1px rgba(0, 0, 0, 0.35) solid;
         margin: 2vh;
+        padding: 2vh 2vw 0;
+        border: 1px rgba(0, 0, 0, 0.35) solid;
     }
 
     main article section i {
         width: 6vw;
     }
 
-    /*PARCOURS DATES*/
     main article section div:nth-child(2) {
-        font-size: 0.7em;
         margin-bottom: 5vh;
+        font-size: 1em;
     }
 
     main article section p {
@@ -425,12 +583,12 @@ footer .col-lg-9 {
         margin-bottom: 5vh;
     }
 
-    footer div:first-child {
-        padding-top: 0;
-    }
-
     footer {
         height: 20vh;
+    }
+
+    footer div:first-child {
+        padding-top: 0;
     }
 
     footer div:first-child div {
@@ -438,7 +596,7 @@ footer .col-lg-9 {
     }
 
     footer div:nth-child(2) div {
-        display: none
+        display: none;
     }
 
     footer .col-lg-9 {
@@ -446,14 +604,21 @@ footer .col-lg-9 {
     }
 }
 
+/* ==========================================================================
+   10. Responsive : tablette
+   ========================================================================== */
+
 @media (min-width: 768px) and (max-width: 991px) {
     .container {
         max-width: 100%;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+/* ==========================================================================
+   11. Responsive : ordinateur intermédiaire
+   ========================================================================== */
 
+@media (min-width: 992px) and (max-width: 1199px) {
     .container {
         max-width: 100%;
     }
@@ -463,8 +628,8 @@ footer .col-lg-9 {
     }
 
     img {
-        min-height: 10vh;
         min-width: 10vh;
+        min-height: 10vh;
     }
 
     header {
@@ -477,8 +642,8 @@ footer .col-lg-9 {
     }
 
     .titles {
-        margin-bottom: 1vh;
         height: 6vh;
+        margin-bottom: 1vh;
     }
 
     ul {
@@ -490,14 +655,11 @@ footer .col-lg-9 {
         text-align: left;
     }
 
-    /*PARCOURS - Formation*/
-
     main article section {
-        display: flex;
         flex-wrap: wrap;
-        padding: 1vh 2vw 0 2vw;
-        border: 1px rgba(0, 0, 0, 0.35) solid;
         margin: 2vh;
+        padding: 1vh 2vw 0;
+        border: 1px rgba(0, 0, 0, 0.35) solid;
     }
 
     main article section i {
@@ -505,11 +667,9 @@ footer .col-lg-9 {
         padding-top: 1vh;
     }
 
-    /*PARCOURS DATES*/
-
     main article section div:nth-child(2) {
-        font-size: 1em;
         margin-bottom: 3vh;
+        font-size: 1em;
     }
 
     main article section p {
@@ -529,13 +689,13 @@ footer .col-lg-9 {
         height: 30vh;
     }
 
+    footer section {
+        margin-top: 4vh;
+    }
+
     footer section p,
     footer section a {
         font-size: 1.1em;
-    }
-
-    footer section {
-        margin-top: 4vh;
     }
 
     footer .col-lg-9 {
@@ -543,41 +703,6 @@ footer .col-lg-9 {
     }
 
     footer .col-lg-3 {
-        padding-top: 5vh;
+        padding-top: 0;
     }
-}
-
-/*Rajout pour rendre la googlemap responsive*/
-
-.map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-}
-
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    padding-right: 27px;
-}
-
-iframe {
-    border-width: 0px;
-}
-
-/*Rajout de l'effet parallax*/
-
-.img1 {
-    height: 100px;
-    background-attachment: fixed;
-    background-size: ;
-    background-position: 0 center;
-}
-
-.img1 {
-    background-image: url(https://github.com/thierry-laval/cv/blob/master/image/image-du-parallax.jpeg?raw=true);
 }
