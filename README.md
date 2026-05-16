@@ -67,6 +67,19 @@ Le sujet du projet 02 du parcours Développeur web chez Openclassrooms porte sur
 
 ***
 
+### 🚀 Dernières Modernisations (2026)
+
+Afin d'améliorer l'expérience utilisateur (UX) et l'esthétique du CV, plusieurs modifications ont été apportées :
+
+* **Système d'ouverture/fermeture (Accordéon) :** Ajout d'interactivité JavaScript pour masquer ou afficher les sections volumineuses (*Diplômes* et *Expérience professionnelle*), permettant une lecture plus fluide et une mise en page aérée.
+* **Filtrage dynamique des pays :** Implémentation d'un système de filtres par zone géographique (Europe, Asie, Afrique, etc.) pour la liste des pays visités, améliorant la lisibilité des données.
+* **Optimisation de la liste des pays :** Remplacement des éléments de formulaire (`input checkbox`) par des puces graphiques (`FontAwesome`) pour un rendu plus épuré.
+* **Personnalisation CSS :** Création de la classe `.travel-bullet` permettant d'harmoniser la couleur des puces avec la charte graphique du site (Bleu `#00BFF4`).
+* **Accessibilité (A11y) :** Utilisation de boutons sémantiques et de l'attribut `aria-expanded` pour rendre le système de toggle compréhensible par les technologies d'assistance.
+* **Maintenance du code :** Mise à jour des fichiers CSS et CSS minifiés pour assurer une cohérence visuelle sur tous les environnements.
+
+***
+
 #### 🚦 &nbsp; Les documents de présentation et livrables
 
 → Voir le dépôt sur [Github](https://github.com/thierry-laval/P02-transformez-votre-cv-en-site-web)\
