@@ -282,9 +282,10 @@ li strong {
 }
 
 .toggle-content.expanded {
-    max-height: 2000px; /* Valeur suffisamment grande */
+    max-height: 9999px; /* Valeur très grande pour s'assurer que le contenu ne soit jamais coupé */
     opacity: 1;
     margin-bottom: 3vh;
+    padding-bottom: 30px; /* Sécurité augmentée pour le redimensionnement responsive */
 }
 
 /* Ajustement de la marge quand replié */
@@ -359,6 +360,11 @@ main article section div:nth-child(2) {
     line-height: 1.4;
 }
 
+/* Colonne du contenu : flex-1 assure que le bloc s'adapte dynamiquement à la hauteur du texte */
+main article section div:nth-child(3) {
+    flex: 1;
+}
+
 main article section h2 {
     font-family: "caviar_dreamsbold";
     font-size: 1.2em;
@@ -374,8 +380,7 @@ main article section h3 {
 }
 
 main article section p {
-    padding-bottom: 3vh;
-    font-size: 1em;
+    padding-bottom: 10px;
     line-height: 1.6;
 }
 
@@ -439,7 +444,7 @@ main article section p {
    ========================================================================== */
 
 footer {
-    height: 35vh;
+    min-height: 35vh; /* Utilisation de min-height pour éviter de couper les recommandations */
 }
 
 footer .col-lg-3 {
@@ -612,7 +617,7 @@ footer section a {
     }
 
     main article section p {
-        padding-bottom: 0;
+        padding-bottom: 20px; /* Plus d'espace pour la lecture sur mobile */
     }
 
     main article section h2 {
@@ -625,7 +630,7 @@ footer section a {
     }
 
     footer {
-        height: 20vh;
+        min-height: 20vh;
     }
 
     footer div:first-child {
@@ -714,7 +719,7 @@ footer section a {
     }
 
     main article section p {
-        padding-bottom: 0;
+        padding-bottom: 20px;
         font-size: 1.2em;
     }
 
@@ -728,7 +733,7 @@ footer section a {
     }
 
     footer {
-        height: 30vh;
+        min-height: 30vh;
     }
 
     footer section {

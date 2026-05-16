@@ -86,8 +86,12 @@ Afin d'améliorer l'expérience utilisateur (UX) et l'esthétique du CV, plusieu
 * **Ergonomie Mobile :** Désactivation des interactions tactiles sur la carte Google Maps lors du défilement pour éviter les blocages de navigation sur smartphone.
 * **Architecture logicielle :** Extraction du code JavaScript vers un fichier externe (`script.js`) pour une meilleure séparation des préoccupations et une plus grande lisibilité.
 * **Corrections typographiques et affichage :** 
-  * Ajustement précis du `line-height` et du `padding-top` sur les titres `h2` pour éviter le rognage des caractères de la police personnalisée.
-  * Correction de la règle pour les balises `<strong>` afin d'utiliser la variante _Bold_ réelle de la police, garantissant un contraste visuel effectif.
+  * Ajustement précis du `line-height` et du `padding-top` sur les titres `h2` pour éviter le rognage des caractères.
+  * Optimisation du système de grille Flexbox (`flex: 1`) pour assurer une redistribution fluide du texte lors du redimensionnement de la fenêtre.
+  * Augmentation de la `max-height` des accordéons à une valeur très élevée (`9999px`) et ajout d'une zone de sécurité accrue (`padding-bottom: 30px`) pour éviter tout rognage de texte en mode responsive, même avec des contenus longs ou des redimensionnements dynamiques.
+  * Passage en `min-height` pour le pied de page afin d'éviter tout rognage de texte.
+  * Rétablissement d'une marge de lecture sous les paragraphes dans les versions responsives.
+  * Correction de la règle pour les balises `<strong>` afin d'utiliser la variante _Bold_ réelle de la police.
 * **Maintenance et Accessibilité :** Utilisation d'attributs `aria-expanded` pour les lecteurs d'écran et synchronisation rigoureuse des fichiers CSS sources et minifiés.
 
 
