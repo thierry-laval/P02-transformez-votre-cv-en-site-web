@@ -238,7 +238,7 @@
 	                                <h2>Je suis parti visiter le monde (+ de 50 pays & territoires)</h2>
 	                                <h3>Rencontrer les gens, apprendre les différentes cultures</h3>
 		                                <p>Professionnel polyvalent avec une expérience en mode nomade dans les domaines suivants : sécurité, convoyage de voiliers, gestion d’hébergements et de commerces, direction d’agence d’infographie et de reprographie, vente et installation de matériel informatique, achats internationaux et export, création de sites web, enseignement de l’informatique et de l’anglais. <button class="toggle-btn travel-toggle" type="button" data-toggle="pays_visites" aria-expanded="false">Voir les pays visités</button></p>
-	                                <div id="pays_visites" class="toggle-content travel-panel" style="display:none">
+	                                <div id="pays_visites" class="toggle-content travel-panel">
 	                                    <div class="travel-filters" aria-label="Filtrer les pays visités par région">
 	                                        <button type="button" data-region="all">Tous</button>
 	                                        <button type="button" data-region="Europe">Europe</button>
@@ -353,7 +353,7 @@
                             <h3>Diplômes</h3>
                             <button class="toggle-btn" type="button" data-toggle="a_masquer1" aria-expanded="false">Ouvrir / Fermer</button>
                         </div>
-                        <div id="a_masquer1" class="toggle-content" style="display:none">
+                        <div id="a_masquer1" class="toggle-content">
                             <section> <i class="far fa-circle"></i>
                                 <div>Développement web</div>
                                 <div>
@@ -388,7 +388,7 @@
                             <h3>Expérience professionnelle</h3>
                             <button class="toggle-btn" type="button" data-toggle="a_masquer" aria-expanded="false">Ouvrir / Fermer</button>
                         </div>
-                        <div id="a_masquer" class="toggle-content" style="display:none">
+                        <div id="a_masquer" class="toggle-content">
 
                             <section> <i class="far fa-circle"></i>
                                 <div>1983 - 1988
@@ -537,51 +537,7 @@
                 </div>
             </footer>
         </div>
-        <!--  JavaScript pour gérer le toggle des sections et le clic droit  -->
-        <script>
-            // Gestion des boutons toggle
-	            document.querySelectorAll('.toggle-btn').forEach(btn => {
-	                btn.addEventListener('click', function() {
-	                    const targetId = this.getAttribute('data-toggle');
-	                    const target = document.getElementById(targetId);
-	                    const isHidden = target.style.display === 'none';
-	                    target.style.display = isHidden ? 'block' : 'none';
-	                    this.setAttribute('aria-expanded', isHidden);
-	                });
-	            });
-
-	            // Filtre des pays visités par région
-	            document.querySelectorAll('.travel-filters button').forEach(btn => {
-	                btn.addEventListener('click', function() {
-	                    const region = this.getAttribute('data-region');
-	                    const items = document.querySelectorAll('.travel-list label');
-
-	                    items.forEach(item => {
-	                        if (region === 'all' || item.dataset.continent === region) {
-	                            item.classList.remove('hidden');
-	                        } else {
-	                            item.classList.add('hidden');
-	                        }
-	                    });
-	                });
-	            });
-
-	            // Protection du clic droit
-	            function disableselect(e) {
-                return false
-            }
-
-            function reEnable() {
-                return true
-            }
-            document.onselectstart = new Function("return false")
-            document.oncontextmenu = new Function("return false")
-            if (window.sidebar) {
-                document.onmousedown = disableselect
-                document.onclick = reEnable
-            }
-        </script>
-        <!--  Fin du JavaScript  -->
+        <script src="./script.js"></script>
 
     </body>
 
